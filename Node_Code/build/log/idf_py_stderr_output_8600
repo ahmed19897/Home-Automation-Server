@@ -1,0 +1,756 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM7 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM7 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x4014e674: adc_hal_check_event at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:294
+0x40082e34: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x4008cdd2: _frxt_int_enter at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:139
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4014e671: i2s_ll_rx_get_eof_des_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/i2s_ll.h:599
+ (inlined by) adc_hal_get_desc_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:290
+0x40082e31: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x4000c30b: memcpy in ROM
+0x4009614d: spi_flash_chip_generic_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_chip_generic.c:249
+0x40084adf: esp_flash_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:898 (discriminator 4)
+0x40120df2: esp_partition_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_partition/partition_target.c:38
+0x400dc36b: nvs::NVSPartition::read(unsigned int, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition.cpp:45
+0x4014d12e: nvs::Page::readEntry(unsigned int, nvs::Item&) const at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:853
+0x400dd716: nvs::Page::mLoadEntryTable() at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:718
+0x400dd8d4: nvs::Page::load(nvs::Partition*, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:83
+0x400ddb1b: nvs::PageManager::load(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_pagemanager.cpp:25
+0x400dbabf: nvs::Storage::init(unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_storage.cpp:172
+0x400dc554: nvs::NVSPartitionManager::init_custom(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:92
+0x400dc5bd: nvs::NVSPartitionManager::init_partition(char const*) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:54
+0x400dad8e: nvs_flash_init_partition at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:125
+0x400dada2: nvs_flash_init at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:161
+0x400d6c0b: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:97
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x4014e674: adc_hal_check_event at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:294
+0x40082e34: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x4008cdd2: _frxt_int_enter at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:139
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4014e671: i2s_ll_rx_get_eof_des_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/i2s_ll.h:599
+ (inlined by) adc_hal_get_desc_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:290
+0x40082e31: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x4000c2e5: memcpy in ROM
+0x4008dea5: spi_flash_ll_get_buffer_data at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/spi_flash_ll.h:137
+0x4008e2a1: spi_flash_hal_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/spi_flash_hal_common.inc:192
+0x40096139: spi_flash_chip_generic_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_chip_generic.c:247
+0x40084adf: esp_flash_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:898 (discriminator 4)
+0x40120df2: esp_partition_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_partition/partition_target.c:38
+0x400dc36b: nvs::NVSPartition::read(unsigned int, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition.cpp:45
+0x4014d12e: nvs::Page::readEntry(unsigned int, nvs::Item&) const at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:853
+0x400dd716: nvs::Page::mLoadEntryTable() at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:718
+0x400dd8d4: nvs::Page::load(nvs::Partition*, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:83
+0x400ddb1b: nvs::PageManager::load(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_pagemanager.cpp:25
+0x400dbabf: nvs::Storage::init(unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_storage.cpp:172
+0x400dc554: nvs::NVSPartitionManager::init_custom(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:92
+0x400dc5bd: nvs::NVSPartitionManager::init_partition(char const*) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:54
+0x400dad8e: nvs_flash_init_partition at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:125
+0x400dada2: nvs_flash_init at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:161
+0x400d6c0b: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:97
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x4014e674: adc_hal_check_event at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:294
+0x40082e34: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x4008cdd2: _frxt_int_enter at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:139
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4014e671: i2s_ll_rx_get_eof_des_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/i2s_ll.h:599
+ (inlined by) adc_hal_get_desc_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:290
+0x40082e31: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x4008bf1c: xTaskGetSchedulerState at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/tasks.c:5152
+0x400842ac: spi_flash_enable_interrupts_caches_and_other_cpu at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/cache_utils.c:222
+0x400850e3: cache_enable at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_os_func_app.c:65
+0x400850ee: spi1_end at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_os_func_app.c:140
+0x400880c9: spiflash_end_default at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:202
+0x40084b03: esp_flash_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:905
+0x40120df2: esp_partition_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_partition/partition_target.c:38
+0x400dc36b: nvs::NVSPartition::read(unsigned int, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition.cpp:45
+0x4014d12e: nvs::Page::readEntry(unsigned int, nvs::Item&) const at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:853
+0x400dd716: nvs::Page::mLoadEntryTable() at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:718
+0x400dd8d4: nvs::Page::load(nvs::Partition*, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:83
+0x400ddb1b: nvs::PageManager::load(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_pagemanager.cpp:25
+0x400dbabf: nvs::Storage::init(unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_storage.cpp:172
+0x400dc554: nvs::NVSPartitionManager::init_custom(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:92
+0x400dc5bd: nvs::NVSPartitionManager::init_partition(char const*) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:54
+0x400dad8e: nvs_flash_init_partition at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:125
+0x400dada2: nvs_flash_init at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:161
+0x400d6c0b: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:97
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x4014e674: adc_hal_check_event at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:294
+0x40082e34: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x4008cdd2: _frxt_int_enter at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:139
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4014e671: i2s_ll_rx_get_eof_des_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/i2s_ll.h:599
+ (inlined by) adc_hal_get_desc_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:290
+0x40082e31: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x40082588: esp_dport_access_reg_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/soc/esp32/dport_access.c:14
+0x4008d704: cache_ll_l1_enable_cache at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/cache_ll.h:33
+ (inlined by) cache_hal_resume at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/cache_hal_esp32.c:24
+0x40084239: spi_flash_restore_cache at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/cache_utils.c:371
+0x400842f1: spi_flash_enable_interrupts_caches_and_other_cpu at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/cache_utils.c:227
+0x400850e3: cache_enable at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_os_func_app.c:65
+0x400850ee: spi1_end at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_os_func_app.c:140
+0x400880c9: spiflash_end_default at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:202
+0x40084b03: esp_flash_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:905
+0x40120df2: esp_partition_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_partition/partition_target.c:38
+0x400dc36b: nvs::NVSPartition::read(unsigned int, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition.cpp:45
+0x4014d12e: nvs::Page::readEntry(unsigned int, nvs::Item&) const at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:853
+0x400dd716: nvs::Page::mLoadEntryTable() at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:718
+0x400dd8d4: nvs::Page::load(nvs::Partition*, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:83
+0x400ddb1b: nvs::PageManager::load(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_pagemanager.cpp:25
+0x400dbabf: nvs::Storage::init(unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_storage.cpp:172
+0x400dc554: nvs::NVSPartitionManager::init_custom(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:92
+0x400dc5bd: nvs::NVSPartitionManager::init_partition(char const*) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:54
+0x400dad8e: nvs_flash_init_partition at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:125
+0x400dada2: nvs_flash_init at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:161
+0x400d6c0b: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:97
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x4014e674: adc_hal_check_event at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:294
+0x40082e34: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x4008cdd2: _frxt_int_enter at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:139
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4014e671: i2s_ll_rx_get_eof_des_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/i2s_ll.h:599
+ (inlined by) adc_hal_get_desc_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:290
+0x40082e31: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x40096139: spi_flash_chip_generic_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_chip_generic.c:247
+0x40084adf: esp_flash_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:898 (discriminator 4)
+0x40120df2: esp_partition_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_partition/partition_target.c:38
+0x400dc36b: nvs::NVSPartition::read(unsigned int, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition.cpp:45
+0x4014d12e: nvs::Page::readEntry(unsigned int, nvs::Item&) const at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:853
+0x400dd716: nvs::Page::mLoadEntryTable() at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:718
+0x400dd8d4: nvs::Page::load(nvs::Partition*, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:83
+0x400ddb1b: nvs::PageManager::load(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_pagemanager.cpp:25
+0x400dbabf: nvs::Storage::init(unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_storage.cpp:172
+0x400dc554: nvs::NVSPartitionManager::init_custom(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:92
+0x400dc5bd: nvs::NVSPartitionManager::init_partition(char const*) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:54
+0x400dad8e: nvs_flash_init_partition at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:125
+0x400dada2: nvs_flash_init at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:161
+0x400d6c0b: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:97
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x4014e674: adc_hal_check_event at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:294
+0x40082e34: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x4008cdd2: _frxt_int_enter at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:139
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4014e671: i2s_ll_rx_get_eof_des_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/i2s_ll.h:599
+ (inlined by) adc_hal_get_desc_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:290
+0x40082e31: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x4000c2dd: memcpy in ROM
+0x4008dea5: spi_flash_ll_get_buffer_data at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/spi_flash_ll.h:137
+0x4008e2a1: spi_flash_hal_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/spi_flash_hal_common.inc:192
+0x40096139: spi_flash_chip_generic_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_chip_generic.c:247
+0x40084adf: esp_flash_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:898 (discriminator 4)
+0x40120df2: esp_partition_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_partition/partition_target.c:38
+0x400dc36b: nvs::NVSPartition::read(unsigned int, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition.cpp:45
+0x4014d12e: nvs::Page::readEntry(unsigned int, nvs::Item&) const at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:853
+0x400dd716: nvs::Page::mLoadEntryTable() at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:718
+0x400dd8d4: nvs::Page::load(nvs::Partition*, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:83
+0x400ddb1b: nvs::PageManager::load(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_pagemanager.cpp:25
+0x400dbabf: nvs::Storage::init(unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_storage.cpp:172
+0x400dc554: nvs::NVSPartitionManager::init_custom(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:92
+0x400dc5bd: nvs::NVSPartitionManager::init_partition(char const*) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:54
+0x400dad8e: nvs_flash_init_partition at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:125
+0x400dada2: nvs_flash_init at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:161
+0x400d6c0b: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:97
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x4014e674: adc_hal_check_event at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:294
+0x40082e34: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x4008cdd2: _frxt_int_enter at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:139
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4014e671: i2s_ll_rx_get_eof_des_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/i2s_ll.h:599
+ (inlined by) adc_hal_get_desc_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:290
+0x40082e31: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x4008d70c: cache_ll_l1_enable_cache at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/cache_ll.h:33
+ (inlined by) cache_hal_resume at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/cache_hal_esp32.c:24
+0x40084239: spi_flash_restore_cache at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/cache_utils.c:371
+0x400842f1: spi_flash_enable_interrupts_caches_and_other_cpu at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/cache_utils.c:227
+0x400850e3: cache_enable at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_os_func_app.c:65
+0x400850ee: spi1_end at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_os_func_app.c:140
+0x400880c9: spiflash_end_default at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:202
+0x40084b03: esp_flash_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:905
+0x40120df2: esp_partition_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_partition/partition_target.c:38
+0x400dc36b: nvs::NVSPartition::read(unsigned int, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition.cpp:45
+0x4014d12e: nvs::Page::readEntry(unsigned int, nvs::Item&) const at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:853
+0x400dd716: nvs::Page::mLoadEntryTable() at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:718
+0x400dd8d4: nvs::Page::load(nvs::Partition*, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:83
+0x400ddb1b: nvs::PageManager::load(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_pagemanager.cpp:25
+0x400dbabf: nvs::Storage::init(unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_storage.cpp:172
+0x400dc554: nvs::NVSPartitionManager::init_custom(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:92
+0x400dc5bd: nvs::NVSPartitionManager::init_partition(char const*) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:54
+0x400dad8e: nvs_flash_init_partition at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:125
+0x400dada2: nvs_flash_init at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:161
+0x400d6c0b: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:97
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x4014e674: adc_hal_check_event at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:294
+0x40082e34: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x4008cdd2: _frxt_int_enter at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:139
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4014e671: i2s_ll_rx_get_eof_des_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/i2s_ll.h:599
+ (inlined by) adc_hal_get_desc_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:290
+0x40082e31: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x4000bff0: _xtos_set_intlevel in ROM
+0x4008bf4e: vPortClearInterruptMaskFromISR at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+ (inlined by) xTaskGetSchedulerState at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/tasks.c:5175
+0x400842ac: spi_flash_enable_interrupts_caches_and_other_cpu at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/cache_utils.c:222
+0x400850e3: cache_enable at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_os_func_app.c:65
+0x400850ee: spi1_end at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_os_func_app.c:140
+0x400880c9: spiflash_end_default at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:202
+0x40084b03: esp_flash_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:905
+0x40120df2: esp_partition_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_partition/partition_target.c:38
+0x400dc36b: nvs::NVSPartition::read(unsigned int, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition.cpp:45
+0x4014d12e: nvs::Page::readEntry(unsigned int, nvs::Item&) const at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:853
+0x400dd716: nvs::Page::mLoadEntryTable() at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:718
+0x400dd8d4: nvs::Page::load(nvs::Partition*, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:83
+0x400ddb1b: nvs::PageManager::load(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_pagemanager.cpp:25
+0x400dbabf: nvs::Storage::init(unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_storage.cpp:172
+0x400dc554: nvs::NVSPartitionManager::init_custom(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:92
+0x400dc5bd: nvs::NVSPartitionManager::init_partition(char const*) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:54
+0x400dad8e: nvs_flash_init_partition at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:125
+0x400dada2: nvs_flash_init at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:161
+0x400d6c0b: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:97
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x4014e674: adc_hal_check_event at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:294
+0x40082e34: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x4008cdd2: _frxt_int_enter at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:139
+[0m
+[0;33m0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m0x4014e671: i2s_ll_rx_get_eof_des_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/i2s_ll.h:599
+ (inlined by) adc_hal_get_desc_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:290
+0x40082e31: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x4008e479: spi_flash_ll_cmd_is_done at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/spi_flash_ll.h:77 (discriminator 1)
+ (inlined by) spi_flash_hal_poll_cmd_done at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/spi_flash_hal_common.inc:38 (discriminator 1)
+0x4008e296: spi_flash_hal_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/spi_flash_hal_common.inc:190
+0x40096139: spi_flash_chip_generic_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_chip_generic.c:247
+0x40084adf: esp_flash_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:898 (discriminator 4)
+0x40120df2: esp_partition_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_partition/partition_target.c:38
+0x400dc36b: nvs::NVSPartition::read(unsigned int, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition.cpp:45
+0x4014d12e: nvs::Page::readEntry(unsigned int, nvs::Item&) const at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:853
+0x400dd716: nvs::Page::mLoadEntryTable() at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:718
+0x400dd8d4: nvs::Page::load(nvs::Partition*, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:83
+0x400ddb1b: nvs::PageManager::load(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_pagemanager.cpp:25
+0x400dbabf: nvs::Storage::init(unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_storage.cpp:172
+0x400dc554: nvs::NVSPartitionManager::init_custom(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:92
+0x400dc5bd: nvs::NVSPartitionManager::init_partition(char const*) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:54
+0x400dad8e: nvs_flash_init_partition at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:125
+0x400dada2: nvs_flash_init at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:161
+0x400d6c0b: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:97
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0m[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x4014e674: adc_hal_check_event at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:294
+0x40082e34: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x4008cdd2: _frxt_int_enter at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:139
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m.[0m[0;33m0x4014e671: i2s_ll_rx_get_eof_des_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/i2s_ll.h:599
+ (inlined by) adc_hal_get_desc_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:290
+0x40082e31: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x40084297: spi_flash_enable_interrupts_caches_and_other_cpu at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/cache_utils.c:220
+0x400850e3: cache_enable at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_os_func_app.c:65
+0x400850ee: spi1_end at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_os_func_app.c:140
+0x400880c9: spiflash_end_default at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:202
+0x40084b03: esp_flash_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:905
+0x40120df2: esp_partition_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_partition/partition_target.c:38
+0x400dc36b: nvs::NVSPartition::read(unsigned int, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition.cpp:45
+0x4014d12e: nvs::Page::readEntry(unsigned int, nvs::Item&) const at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:853
+0x400dd716: nvs::Page::mLoadEntryTable() at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:718
+0x400dd8d4: nvs::Page::load(nvs::Partition*, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:83
+0x400ddb1b: nvs::PageManager::load(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_pagemanager.cpp:25
+0x400dbabf: nvs::Storage::init(unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_storage.cpp:172
+0x400dc554: nvs::NVSPartitionManager::init_custom(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:92
+0x400dc5bd: nvs::NVSPartitionManager::init_partition(char const*) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:54
+0x400dad8e: nvs_flash_init_partition at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:125
+0x400dada2: nvs_flash_init at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:161
+0x400d6c0b: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:97
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m.[0m[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x4014e674: adc_hal_check_event at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:294
+0x40082e34: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x4008cdd2: _frxt_int_enter at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:139
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m.[0m[0;33m0x4014e671: i2s_ll_rx_get_eof_des_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/i2s_ll.h:599
+ (inlined by) adc_hal_get_desc_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:290
+0x40082e31: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x4000c2e3: memcpy in ROM
+0x4008dea5: spi_flash_ll_get_buffer_data at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/spi_flash_ll.h:137
+0x4008e2a1: spi_flash_hal_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/spi_flash_hal_common.inc:192
+0x40096139: spi_flash_chip_generic_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_chip_generic.c:247
+0x40084adf: esp_flash_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:898 (discriminator 4)
+0x40120df2: esp_partition_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_partition/partition_target.c:38
+0x400dc36b: nvs::NVSPartition::read(unsigned int, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition.cpp:45
+0x4014d12e: nvs::Page::readEntry(unsigned int, nvs::Item&) const at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:853
+0x400dd716: nvs::Page::mLoadEntryTable() at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:718
+0x400dd8d4: nvs::Page::load(nvs::Partition*, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:83
+0x400ddb1b: nvs::PageManager::load(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_pagemanager.cpp:25
+0x400dbabf: nvs::Storage::init(unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_storage.cpp:172
+0x400dc554: nvs::NVSPartitionManager::init_custom(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:92
+0x400dc5bd: nvs::NVSPartitionManager::init_partition(char const*) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:54
+0x400dad8e: nvs_flash_init_partition at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:125
+0x400dada2: nvs_flash_init at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:161
+0x400d6c0b: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:97
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0;33m0x4014e674: adc_hal_check_event at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:294
+0x40082e34: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x4008cdd2: _frxt_int_enter at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:139
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4014e671: i2s_ll_rx_get_eof_des_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/i2s_ll.h:599
+ (inlined by) adc_hal_get_desc_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:290
+0x40082e31: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008bf4e: vPortClearInterruptMaskFromISR at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+ (inlined by) xTaskGetSchedulerState at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/tasks.c:5175
+0x400842ac: spi_flash_enable_interrupts_caches_and_other_cpu at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/cache_utils.c:222
+0x400850e3: cache_enable at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_os_func_app.c:65
+0x400850ee: spi1_end at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_os_func_app.c:140
+0x400880c9: spiflash_end_default at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:202
+0x40084b03: esp_flash_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:905
+0x40120df2: esp_partition_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_partition/partition_target.c:38
+0x400dc36b: nvs::NVSPartition::read(unsigned int, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition.cpp:45
+0x4014d12e: nvs::Page::readEntry(unsigned int, nvs::Item&) const at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:853
+0x400dd716: nvs::Page::mLoadEntryTable() at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:718
+0x400dd8d4: nvs::Page::load(nvs::Partition*, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:83
+0x400ddb1b: nvs::PageManager::load(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_pagemanager.cpp:25
+0x400dbabf: nvs::Storage::init(unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_storage.cpp:172
+0x400dc554: nvs::NVSPartitionManager::init_custom(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:92
+0x400dc5bd: nvs::NVSPartitionManager::init_partition(char const*) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:54
+0x400dad8e: nvs_flash_init_partition at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:125
+0x400dada2: nvs_flash_init at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:161
+0x400d6c0b: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:97
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x4014e674: adc_hal_check_event at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:294
+0x40082e34: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x4008cdd2: _frxt_int_enter at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:139
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4014e671: i2s_ll_rx_get_eof_des_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/i2s_ll.h:599
+ (inlined by) adc_hal_get_desc_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:290
+0x40082e31: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008bf4e: vPortClearInterruptMaskFromISR at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+ (inlined by) xTaskGetSchedulerState at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/tasks.c:5175
+0x400842ac: spi_flash_enable_interrupts_caches_and_other_cpu at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/cache_utils.c:222
+0x400850e3: cache_enable at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_os_func_app.c:65
+0x400850ee: spi1_end at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_os_func_app.c:140
+0x400880c9: spiflash_end_default at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:202
+0x40084b03: esp_flash_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:905
+0x40120df2: esp_partition_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_partition/partition_target.c:38
+0x400dc36b: nvs::NVSPartition::read(unsigned int, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition.cpp:45
+0x4014d12e: nvs::Page::readEntry(unsigned int, nvs::Item&) const at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:853
+0x400dd716: nvs::Page::mLoadEntryTable() at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:718
+0x400dd8d4: nvs::Page::load(nvs::Partition*, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:83
+0x400ddb1b: nvs::PageManager::load(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_pagemanager.cpp:25
+0x400dbabf: nvs::Storage::init(unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_storage.cpp:172
+0x400dc554: nvs::NVSPartitionManager::init_custom(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:92
+0x400dc5bd: nvs::NVSPartitionManager::init_partition(char const*) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:54
+0x400dad8e: nvs_flash_init_partition at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:125
+0x400dada2: nvs_flash_init at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:161
+0x400d6c0b: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:97
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x4014e674: adc_hal_check_event at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:294
+0x40082e34: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x4008cdd2: _frxt_int_enter at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:139
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4014e671: i2s_ll_rx_get_eof_des_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/i2s_ll.h:599
+ (inlined by) adc_hal_get_desc_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:290
+0x40082e31: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x4000c2e1: memcpy in ROM
+0x4008dea5: spi_flash_ll_get_buffer_data at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/spi_flash_ll.h:137
+0x4008e2a1: spi_flash_hal_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/spi_flash_hal_common.inc:192
+0x40096139: spi_flash_chip_generic_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_chip_generic.c:247
+0x40084adf: esp_flash_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:898 (discriminator 4)
+0x40120df2: esp_partition_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_partition/partition_target.c:38
+0x400dc36b: nvs::NVSPartition::read(unsigned int, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition.cpp:45
+0x4014d12e: nvs::Page::readEntry(unsigned int, nvs::Item&) const at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:853
+0x400dd716: nvs::Page::mLoadEntryTable() at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:718
+0x400dd8d4: nvs::Page::load(nvs::Partition*, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:83
+0x400ddb1b: nvs::PageManager::load(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_pagemanager.cpp:25
+0x400dbabf: nvs::Storage::init(unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_storage.cpp:172
+0x400dc554: nvs::NVSPartitionManager::init_custom(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:92
+0x400dc5bd: nvs::NVSPartitionManager::init_partition(char const*) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:54
+0x400dad8e: nvs_flash_init_partition at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:125
+0x400dada2: nvs_flash_init at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:161
+0x400d6c0b: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:97
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x4014e674: adc_hal_check_event at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:294
+0x40082e34: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x4008cdd2: _frxt_int_enter at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:139
+[0m
+[0;33m0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m0x4014e671: i2s_ll_rx_get_eof_des_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/i2s_ll.h:599
+ (inlined by) adc_hal_get_desc_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:290
+0x40082e31: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x4008e479: spi_flash_ll_cmd_is_done at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/spi_flash_ll.h:77 (discriminator 1)
+ (inlined by) spi_flash_hal_poll_cmd_done at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/spi_flash_hal_common.inc:38 (discriminator 1)
+0x4008e296: spi_flash_hal_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/spi_flash_hal_common.inc:190
+0x40096139: spi_flash_chip_generic_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_chip_generic.c:247
+0x40084adf: esp_flash_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:898 (discriminator 4)
+0x40120df2: esp_partition_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_partition/partition_target.c:38
+0x400dc36b: nvs::NVSPartition::read(unsigned int, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition.cpp:45
+0x4014d12e: nvs::Page::readEntry(unsigned int, nvs::Item&) const at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:853
+0x400dd716: nvs::Page::mLoadEntryTable() at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:718
+0x400dd8d4: nvs::Page::load(nvs::Partition*, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:83
+0x400ddb1b: nvs::PageManager::load(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_pagemanager.cpp:25
+0x400dbabf: nvs::Storage::init(unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_storage.cpp:172
+0x400dc554: nvs::NVSPartitionManager::init_custom(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:92
+0x400dc5bd: nvs::NVSPartitionManager::init_partition(char const*) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:54
+0x400dad8e: nvs_flash_init_partition at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:125
+0x400dada2: nvs_flash_init at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:161
+0x400d6c0b: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:97
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x4014e674: adc_hal_check_event at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:294
+0x40082e34: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x4008cdd2: _frxt_int_enter at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:139
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4014e671: i2s_ll_rx_get_eof_des_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/i2s_ll.h:599
+ (inlined by) adc_hal_get_desc_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:290
+0x40082e31: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400850dd: main_flash_region_protected at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_os_func_app.c:215
+0x400880c9: spiflash_end_default at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:202
+0x40084b03: esp_flash_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:905
+0x40120df2: esp_partition_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_partition/partition_target.c:38
+0x400dc36b: nvs::NVSPartition::read(unsigned int, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition.cpp:45
+0x4014d12e: nvs::Page::readEntry(unsigned int, nvs::Item&) const at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:853
+0x400dd716: nvs::Page::mLoadEntryTable() at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:718
+0x400dd8d4: nvs::Page::load(nvs::Partition*, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:83
+0x400ddb1b: nvs::PageManager::load(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_pagemanager.cpp:25
+0x400dbabf: nvs::Storage::init(unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_storage.cpp:172
+0x400dc554: nvs::NVSPartitionManager::init_custom(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:92
+0x400dc5bd: nvs::NVSPartitionManager::init_partition(char const*) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:54
+0x400dad8e: nvs_flash_init_partition at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:125
+0x400dada2: nvs_flash_init at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:161
+0x400d6c0b: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:97
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x4014e674: adc_hal_check_event at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:294
+0x40082e34: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x4008cdd2: _frxt_int_enter at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:139
+[0m
+[0;33m0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m0x4014e671: i2s_ll_rx_get_eof_des_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/i2s_ll.h:599
+ (inlined by) adc_hal_get_desc_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:290
+0x40082e31: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x4008e47b: spi_flash_ll_cmd_is_done at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/spi_flash_ll.h:77 (discriminator 1)
+ (inlined by) spi_flash_hal_poll_cmd_done at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/spi_flash_hal_common.inc:38 (discriminator 1)
+0x4008e296: spi_flash_hal_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/spi_flash_hal_common.inc:190
+0x40096139: spi_flash_chip_generic_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_chip_generic.c:247
+0x40084adf: esp_flash_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:898 (discriminator 4)
+0x40120df2: esp_partition_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_partition/partition_target.c:38
+0x400dc36b: nvs::NVSPartition::read(unsigned int, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition.cpp:45
+0x4014d12e: nvs::Page::readEntry(unsigned int, nvs::Item&) const at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:853
+0x400dd716: nvs::Page::mLoadEntryTable() at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:718
+0x400dd8d4: nvs::Page::load(nvs::Partition*, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:83
+0x400ddb1b: nvs::PageManager::load(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_pagemanager.cpp:25
+0x400dbabf: nvs::Storage::init(unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_storage.cpp:172
+0x400dc554: nvs::NVSPartitionManager::init_custom(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:92
+0x400dc5bd: nvs::NVSPartitionManager::init_partition(char const*) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:54
+0x400dad8e: nvs_flash_init_partition at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:125
+0x400dada2: nvs_flash_init at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:161
+0x400d6c0b: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:97
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x4014e674: adc_hal_check_event at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:294
+0x40082e34: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x4008cdd2: _frxt_int_enter at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:139
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4014e671: i2s_ll_rx_get_eof_des_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/i2s_ll.h:599
+ (inlined by) adc_hal_get_desc_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:290
+0x40082e31: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400850dd: main_flash_region_protected at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_os_func_app.c:215
+0x400880c9: spiflash_end_default at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:202
+0x40084b03: esp_flash_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:905
+0x40120df2: esp_partition_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_partition/partition_target.c:38
+0x400dc36b: nvs::NVSPartition::read(unsigned int, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition.cpp:45
+0x4014d12e: nvs::Page::readEntry(unsigned int, nvs::Item&) const at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:853
+0x400dd716: nvs::Page::mLoadEntryTable() at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:718
+0x400dd8d4: nvs::Page::load(nvs::Partition*, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:83
+0x400ddb1b: nvs::PageManager::load(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_pagemanager.cpp:25
+0x400dbabf: nvs::Storage::init(unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_storage.cpp:172
+0x400dc554: nvs::NVSPartitionManager::init_custom(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:92
+0x400dc5bd: nvs::NVSPartitionManager::init_partition(char const*) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:54
+0x400dad8e: nvs_flash_init_partition at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:125
+0x400dada2: nvs_flash_init at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:161
+0x400d6c0b: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:97
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x4014e674: adc_hal_check_event at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:294
+0x40082e34: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x4008cdd2: _frxt_int_enter at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:139
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4014e671: i2s_ll_rx_get_eof_des_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/i2s_ll.h:599
+ (inlined by) adc_hal_get_desc_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:290
+0x40082e31: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x40084adf: esp_flash_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:898 (discriminator 4)
+0x40120df2: esp_partition_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_partition/partition_target.c:38
+0x400dc36b: nvs::NVSPartition::read(unsigned int, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition.cpp:45
+0x4014d12e: nvs::Page::readEntry(unsigned int, nvs::Item&) const at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:853
+0x400dd716: nvs::Page::mLoadEntryTable() at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:718
+0x400dd8d4: nvs::Page::load(nvs::Partition*, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:83
+0x400ddb1b: nvs::PageManager::load(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_pagemanager.cpp:25
+0x400dbabf: nvs::Storage::init(unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_storage.cpp:172
+0x400dc554: nvs::NVSPartitionManager::init_custom(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:92
+0x400dc5bd: nvs::NVSPartitionManager::init_partition(char const*) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:54
+0x400dad8e: nvs_flash_init_partition at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:125
+0x400dada2: nvs_flash_init at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:161
+0x400d6c0b: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:97
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x4014e674: adc_hal_check_event at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:294
+0x40082e34: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x4008cdd2: _frxt_int_enter at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:139
+[0m
+[0;33m0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m0x4014e671: i2s_ll_rx_get_eof_des_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/i2s_ll.h:599
+ (inlined by) adc_hal_get_desc_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:290
+0x40082e31: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x4008e479: spi_flash_ll_cmd_is_done at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/spi_flash_ll.h:77 (discriminator 1)
+ (inlined by) spi_flash_hal_poll_cmd_done at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/spi_flash_hal_common.inc:38 (discriminator 1)
+0x4008e296: spi_flash_hal_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/spi_flash_hal_common.inc:190
+0x40096139: spi_flash_chip_generic_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_chip_generic.c:247
+0x40084adf: esp_flash_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:898 (discriminator 4)
+0x40120df2: esp_partition_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_partition/partition_target.c:38
+0x400dc36b: nvs::NVSPartition::read(unsigned int, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition.cpp:45
+0x4014d12e: nvs::Page::readEntry(unsigned int, nvs::Item&) const at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:853
+0x400dd716: nvs::Page::mLoadEntryTable() at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:718
+0x400dd8d4: nvs::Page::load(nvs::Partition*, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:83
+0x400ddb1b: nvs::PageManager::load(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_pagemanager.cpp:25
+0x400dbabf: nvs::Storage::init(unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_storage.cpp:172
+0x400dc554: nvs::NVSPartitionManager::init_custom(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:92
+0x400dc5bd: nvs::NVSPartitionManager::init_partition(char const*) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:54
+0x400dad8e: nvs_flash_init_partition at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:125
+0x400dada2: nvs_flash_init at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:161
+0x400d6c0b: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:97
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x4014e674: adc_hal_check_event at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:294
+0x40082e34: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x4008cdd2: _frxt_int_enter at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:139
+[0m
+[0;33m0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m0x4014e671: i2s_ll_rx_get_eof_des_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/i2s_ll.h:599
+ (inlined by) adc_hal_get_desc_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:290
+0x40082e31: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x4008de89: spi_flash_ll_set_buffer_data at spi_flash_hal_iram.c:?
+0x40096139: spi_flash_chip_generic_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_chip_generic.c:247
+0x40084adf: esp_flash_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:898 (discriminator 4)
+0x40120df2: esp_partition_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_partition/partition_target.c:38
+0x400dc36b: nvs::NVSPartition::read(unsigned int, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition.cpp:45
+0x4014d12e: nvs::Page::readEntry(unsigned int, nvs::Item&) const at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:853
+0x400dd716: nvs::Page::mLoadEntryTable() at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:718
+0x400dd8d4: nvs::Page::load(nvs::Partition*, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:83
+0x400ddb1b: nvs::PageManager::load(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_pagemanager.cpp:25
+0x400dbabf: nvs::Storage::init(unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_storage.cpp:172
+0x400dc554: nvs::NVSPartitionManager::init_custom(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:92
+0x400dc5bd: nvs::NVSPartitionManager::init_partition(char const*) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:54
+0x400dad8e: nvs_flash_init_partition at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:125
+0x400dada2: nvs_flash_init at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:161
+0x400d6c0b: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:97
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x4014e674: adc_hal_check_event at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:294
+0x40082e34: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x4008cdd2: _frxt_int_enter at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:139
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4014e671: i2s_ll_rx_get_eof_des_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/i2s_ll.h:599
+ (inlined by) adc_hal_get_desc_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:290
+0x40082e31: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x4009614d: spi_flash_chip_generic_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_chip_generic.c:249
+0x40084adf: esp_flash_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:898 (discriminator 4)
+0x40120df2: esp_partition_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_partition/partition_target.c:38
+0x400dc36b: nvs::NVSPartition::read(unsigned int, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition.cpp:45
+0x4014d12e: nvs::Page::readEntry(unsigned int, nvs::Item&) const at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:853
+0x400dd716: nvs::Page::mLoadEntryTable() at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:718
+0x400dd8d4: nvs::Page::load(nvs::Partition*, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:83
+0x400ddb1b: nvs::PageManager::load(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_pagemanager.cpp:25
+0x400dbabf: nvs::Storage::init(unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_storage.cpp:172
+0x400dc554: nvs::NVSPartitionManager::init_custom(nvs::Partition*, unsigned long, unsigned long) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:92
+0x400dc5bd: nvs::NVSPartitionManager::init_partition(char const*) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition_manager.cpp:54
+0x400dad8e: nvs_flash_init_partition at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:125
+0x400dada2: nvs_flash_init at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:161
+0x400d6c0b: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:97
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

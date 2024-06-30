@@ -1,0 +1,439 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.4-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Jun 16 2024 05:15:56[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.0[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=21390h (136080) map[0m
+[0;32mI (156) esp_image: segment 1: paddr=000313b8 vaddr=3ffb0000 size=03bbch ( 15292) load[0m
+[0;32mI (162) esp_image: segment 2: paddr=00034f7c vaddr=40080000 size=0b09ch ( 45212) load[0m
+[0;32mI (181) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=853a4h (545700) map[0m
+[0;32mI (378) esp_image: segment 4: paddr=000c53cc vaddr=4008b09c size=0bdb8h ( 48568) load[0m
+[0;32mI (410) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (410) boot: Disabling RNG early entropy source...[0m
+[0;32mI (422) cpu_start: Multicore app[0m
+[0;32mI (422) cpu_start: Pro cpu up.[0m
+[0;32mI (422) cpu_start: Starting app cpu, entry point is 0x40081478[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (440) cpu_start: Pro cpu start user code[0m
+[0;32mI (440) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (440) cpu_start: Application information:[0m
+[0;32mI (445) cpu_start: Project name:     tcp_client[0m
+[0;32mI (450) cpu_start: App version:      1[0m
+[0;32mI (455) cpu_start: Compile time:     Jun 16 2024 05:15:23[0m
+[0;32mI (461) cpu_start: ELF file SHA256:  903458cd5e9e0b26...[0m
+[0;32mI (467) cpu_start: ESP-IDF:          v5.1.4-dirty[0m
+[0;32mI (472) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (477) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (482) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (486) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (494) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (500) heap_init: At 3FFB7C68 len 00028398 (160 KiB): DRAM[0m
+[0;32mI (506) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (512) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (519) heap_init: At 40096E54 len 000091AC (36 KiB): IRAM[0m
+[0;32mI (526) spi_flash: detected chip: generic[0m
+[0;32mI (529) spi_flash: flash io: dio[0m
+[0;33mW (533) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (547) app_start: Starting scheduler on CPU0[0m
+[0;32mI (552) app_start: Starting scheduler on CPU1[0m
+[0;32mI (552) main_task: Started on CPU0[0m
+[0;32mI (562) main_task: Calling app_main()[0m
+[0;32mI (702) example_connect: Start example_connect.[0m
+[0;32mI (702) EXAMPLE: adc_pattern[0].atten is :0[0m
+[0;32mI (702) EXAMPLE: adc_pattern[0].channel is :6[0m
+I (712) wifi:wifi driver task: 3ffc2778, prio:23, stack:6656, core=0
+[0;32mI (712) EXAMPLE: adc_pattern[0].unit is :0[0m
+[0;32mI (722) gpio: GPIO[34]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+I (732) wifi:wifi firmware version: 3ce09e5
+I (732) wifi:wifi certification version: v7.0
+I (732) wifi:config NVS flash: enabled
+[0;32mI (742) TASK: ret is 0, ret_num is 256 bytes[0m
+I (742) wifi:[0;32mI (742) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 912[0m
+config nano formating: disabled
+I (752) wifi:Init data frame dynamic rx buffer num: 32
+I (762) wifi:Init static rx mgmt buffer num: 5
+I (762) wifi:Init management short buffer num: 32
+I (772) wifi:Init dynamic tx buffer num: 32
+I (772) wifi:Init static rx buffer size: 1600
+I (772) wifi:Init static rx buffer num: 10
+I (782) wifi:Init dynamic rx buffer num: 32
+[0;32mI (732) main_task: Returned from app_main()[0m
+[0;32mI (782) wifi_init: rx ba win: 6[0m
+[0;32mI (792) wifi_init: tcpip mbox: 32[0m
+[0;32mI (792) wifi_init: udp mbox: 6[0m
+[0;32mI (802) wifi_init: tcp mbox: 6[0m
+[0;32mI (802) wifi_init: tcp tx win: 5760[0m
+[0;32mI (812) wifi_init: tcp rx win: 5760[0m
+[0;32mI (812) wifi_init: tcp mss: 1440[0m
+[0;32mI (812) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (822) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (822) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+Guru Meditation Error: Core  0 panic'ed (Cache disabled but cached memory region accessed). 
+
+Core  0 register dump:
+PC      : 0x4014e6cc  PS      : 0x00060034  A0      : 0x40082e34  A1      : 0x3ffb1c20  
+A2      : 0x3ffbfa24  A3      : 0x3ffbfa28  A4      : 0x00040000  A5      : 0x4008cdd2  
+A6      : 0x3ff42000  A7      : 0x00802000  A8      : 0x800854be  A9      : 0x00000000  
+A10     : 0x3ffbfa28  A11     : 0x00000200  A12     : 0x00800000  A13     : 0x00002000  
+A14     : 0x00000001  A15     : 0x3ffb43dc  SAR     : 0x00000018  EXCCAUSE: 0x00000007  
+EXCVADDR: 0x00000000  LBEG    : 0x4000c46c  LEND    : 0x4000c477  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4014e6c9:0x3ffb1c20 0x40082e31:0x3ffb1c40 0x4008e474:0x3ffc2210 0x4008e296:0x3ffc2230 0x40096139:0x3ffc2250 0x40084adf:0x3ffc22d0 0x40120e4a:0x3ffc2310 0x400dc3c3:0x3ffc2340 0x4014d186:0x3ffc2360 0x400dd3a9:0x3ffc2380 0x400db68d:0x3ffc2410 0x400db71f:0x3ffc2480 0x400dc241:0x3ffc24e0 0x400dadba:0x3ffc2500 0x400dae8d:0x3ffc2530 0x40122887:0x3ffc2550 0x40122a8c:0x3ffc25c0 0x40122b4f:0x3ffc25f0 0x40122c49:0x3ffc2620 0x40152d35:0x3ffc2640 0x401064c2:0x3ffc2660 0x40106cea:0x3ffc2680 0x4010507e:0x3ffc26a0 0x40092c25:0x3ffc26c0 0x4008ca21:0x3ffc26f0
+
+
+
+
+ELF file SHA256: 903458cd5e9e0b26
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (32) boot: ESP-IDF v5.1.4-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Jun 16 2024 05:15:56[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.0[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=21390h (136080) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=000313b8 vaddr=3ffb0000 size=03bbch ( 15292) load[0m
+[0;32mI (162) esp_image: segment 2: paddr=00034f7c vaddr=40080000 size=0b09ch ( 45212) load[0m
+[0;32mI (181) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=853a4h (545700) map[0m
+[0;32mI (378) esp_image: segment 4: paddr=000c53cc vaddr=4008b09c size=0bdb8h ( 48568) load[0m
+[0;32mI (410) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (410) boot: Disabling RNG early entropy source...[0m
+[0;32mI (421) cpu_start: Multicore app[0m
+[0;32mI (422) cpu_start: Pro cpu up.[0m
+[0;32mI (422) cpu_start: Starting app cpu, entry point is 0x40081478[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (440) cpu_start: Pro cpu start user code[0m
+[0;32mI (440) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (440) cpu_start: Application information:[0m
+[0;32mI (444) cpu_start: Project name:     tcp_client[0m
+[0;32mI (450) cpu_start: App version:      1[0m
+[0;32mI (454) cpu_start: Compile time:     Jun 16 2024 05:15:23[0m
+[0;32mI (460) cpu_start: ELF file SHA256:  903458cd5e9e0b26...[0m
+[0;32mI (466) cpu_start: ESP-IDF:          v5.1.4-dirty[0m
+[0;32mI (472) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (476) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (481) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (486) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (493) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (499) heap_init: At 3FFB7C68 len 00028398 (160 KiB): DRAM[0m
+[0;32mI (505) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (512) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (518) heap_init: At 40096E54 len 000091AC (36 KiB): IRAM[0m
+[0;32mI (526) spi_flash: detected chip: generic[0m
+[0;32mI (529) spi_flash: flash io: dio[0m
+[0;33mW (533) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (547) app_start: Starting scheduler on CPU0[0m
+[0;32mI (551) app_start: Starting scheduler on CPU1[0m
+[0;32mI (551) main_task: Started on CPU0[0m
+[0;32mI (561) main_task: Calling app_main()[0m
+[0;32mI (701) example_connect: Start example_connect.[0m
+[0;32mI (701) EXAMPLE: adc_pattern[0].atten is :0[0m
+[0;32mI (701) EXAMPLE: adc_pattern[0].channel is :6[0m
+[0;32mI (701) EXAMPLE: adc_pattern[0].unit is :0[0m
+I (711) wifi:wifi driver task: 3ffc0b78, prio:23, stack:6656, core=0
+[0;32mI (711) gpio: GPIO[34]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (741) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (741) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 403[0m
+I (741) wifi:wifi firmware version: 3ce09e5
+I (741) wifi:wifi certification version: v7.0
+I (751) wifi:config NVS flash: enabled
+I (751) wifi:config nano formating: disabled
+I (751) wifi:Init data frame dynamic rx buffer num: 32
+I (761) wifi:Init static rx mgmt buffer num: 5
+I (761) wifi:Init management short buffer num: 32
+I (771) wifi:Init dynamic tx buffer num: 32
+I (771) wifi:Init static rx buffer size: 1600
+I (781) wifi:Init static rx buffer num: 10
+I (781) wifi:Init dynamic rx buffer num: 32
+[0;32mI (731) main_task: Returned from app_main()[0m
+[0;32mI (781) wifi_init: rx ba win: 6[0m
+[0;32mI (791) wifi_init: tcpip mbox: 32[0m
+[0;32mI (801) wifi_init: udp mbox: 6[0m
+[0;32mI (801) wifi_init: tcp mbox: 6[0m
+[0;32mI (801) wifi_init: tcp tx win: 5760[0m
+[0;32mI (811) wifi_init: tcp rx win: 5760[0m
+[0;32mI (811) wifi_init: tcp mss: 1440[0m
+[0;32mI (821) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (821) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (831) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (911) wifi:mode : sta (a8:42:e3:4b:8a:b4)
+I (911) wifi:enable tsf
+[0;32mI (911) example_connect: Connecting to Etisalat-loy...[0m
+[0;32mI (921) example_connect: Waiting for IP(s)[0m
+[0;32mI (1741) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (1741) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 1200[0m
+[0;32mI (2741) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (2741) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 861[0m
+[0;32mI (3331) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (3741) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (3741) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 727[0m
+[0;32mI (4741) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (4741) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 417[0m
+[0;32mI (5741) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (5741) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 1046[0m
+[0;32mI (5741) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (6741) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (6741) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 878[0m
+[0;32mI (7741) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (7741) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 719[0m
+I (8161) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (8411) wifi:state: init -> auth (b0)
+I (8421) wifi:state: auth -> assoc (0)
+I (8431) wifi:state: assoc -> run (10)
+[0;32mI (8741) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (8741) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 864[0m
+I (8891) wifi:connected with Etisalat-loy, aid = 11, channel 6, BW20, bssid = 1c:7f:2c:e8:88:fc
+I (8891) wifi:security: WPA2-PSK, phy: bgn, rssi: -81
+I (8891) wifi:pm start, type: 1
+
+I (8901) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (8941) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (9741) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (9741) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 609[0m
+I (9881) wifi:<ba-add>idx:0 (ifx:0, 1c:7f:2c:e8:88:fc), tid:0, ssn:5, winSize:64
+[0;32mI (10411) esp_netif_handlers: example_netif_sta ip: 192.168.1.11, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (10411) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.1.11[0m
+[0;32mI (10421) example_common: Connected to example_netif_sta[0m
+[0;32mI (10421) example_common: - IPv4 address: 192.168.1.11,[0m
+[0;32mI (10431) example: Socket created, connecting to 192.168.1.5:8080[0m
+[0;32mI (10741) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (10741) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 1097[0m
+[0;31mE (11421) example: Socket unable to connect: errno 104[0m
+[0;32mI (11421) example: about to send[0m
+[0;32mI (11421) example: Successfully connected[0m
+[0;31mE (11431) example: Error occurred during sending: errno 104[0m
+[0;32mI (11431) example: Socket created, connecting to 192.168.1.5:8080[0m
+[0;31mE (11711) example: Socket unable to connect: errno 104[0m
+[0;32mI (11721) example: Socket created, connecting to 192.168.1.5:8080[0m
+[0;32mI (11741) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (11741) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 827[0m
+[0;32mI (12741) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (12741) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 375[0m
+[0;32mI (13741) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (13741) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 545[0m
+[0;32mI (14741) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (14741) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 432[0m
+[0;31mE (14761) example: Socket unable to connect: errno 104[0m
+[0;32mI (14761) example: about to send[0m
+[0;32mI (14761) example: Successfully connected[0m
+[0;31mE (14761) example: Error occurred during sending: errno 104[0m
+[0;32mI (14771) example: Socket created, connecting to 192.168.1.5:8080[0m
+[0;32mI (15741) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (15741) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 1022[0m
+[0;32mI (16741) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (16741) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 389[0m
+[0;32mI (17741) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (17741) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 1166[0m
+[0;31mE (17871) example: Socket unable to connect: errno 104[0m
+[0;32mI (17871) example: Socket created, connecting to 192.168.1.5:8080[0m
+[0;32mI (18741) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (18741) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 1071[0m
+[0;32mI (19741) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (19741) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 976[0m
+[0;32mI (20741) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (20741) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 1239[0m
+[0;31mE (20941) example: Socket unable to connect: errno 104[0m
+[0;32mI (20941) example: about to send[0m
+[0;32mI (20941) example: Successfully connected[0m
+[0;31mE (20941) example: Error occurred during sending: errno 104[0m
+[0;32mI (20951) example: Socket created, connecting to 192.168.1.5:8080[0m
+[0;32mI (21741) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (21741) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 1074[0m
+[0;31mE (21851) example: Socket unable to connect: errno 104[0m
+[0;32mI (21851) example: Socket created, connecting to 192.168.1.5:8080[0m
+[0;32mI (22741) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (22741) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 1011[0m
+[0;31mE (23401) example: Socket unable to connect: errno 104[0m
+[0;32mI (23401) example: about to send[0m
+[0;32mI (23401) example: Successfully connected[0m
+[0;31mE (23401) example: Error occurred during sending: errno 104[0m
+[0;32mI (23411) example: Socket created, connecting to 192.168.1.5:8080[0m
+[0;31mE (23591) example: Socket unable to connect: errno 104[0m
+[0;32mI (23591) example: Socket created, connecting to 192.168.1.5:8080[0m
+[0;32mI (23741) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (23741) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 434[0m
+[0;31mE (23901) example: Socket unable to connect: errno 104[0m
+[0;32mI (23901) example: about to send[0m
+[0;32mI (23901) example: Successfully connected[0m
+[0;31mE (23911) example: Error occurred during sending: errno 104[0m
+[0;32mI (23911) example: Socket created, connecting to 192.168.1.5:8080[0m
+[0;31mE (24101) example: Socket unable to connect: errno 104[0m
+[0;31mE (24111) example: Unable to create socket: errno 23[0m
+[0;32mI (24111) example: Socket created, connecting to 192.168.1.5:8080[0m
+[0;31mE (24111) example: Socket unable to connect: errno 9[0m
+[0;32mI (24121) example: about to send[0m
+[0;32mI (24121) example: Successfully connected[0m
+[0;31mE (24131) example: Error occurred during sending: errno 9[0m
+[0;31mE (24131) example: Unable to create socket: errno 23[0m
+[0;31mE (24141) example: Unable to create socket: errno 23[0m
+[0;32mI (24141) example: Socket created, connecting to 192.168.1.5:8080[0m
+[0;31mE (24151) example: Socket unable to connect: errno 9[0m
+[0;32mI (24161) example: about to send[0m
+[0;32mI (24161) example: Successfully connected[0m
+[0;31mE (24161) example: Error occurred during sending: errno 9[0m
+[0;31mE (24171) example: Unable to create socket: errno 23[0m
+[0;31mE (24181) example: Unable to create socket: errno 23[0m
+[0;32mI (24181) example: Socket created, connecting to 192.168.1.5:8080[0m
+[0;31mE (24191) example: Socket unable to connect: errno 9[0m
+[0;32mI (24191) example: about to send[0m
+[0;32mI (24201) example: Successfully connected[0m
+[0;31mE (24201) example: Error occurred during sending: errno 9[0m
+[0;31mE (24211) example: Unable to create socket: errno 23[0m
+[0;31mE (24211) example: Unable to create socket: errno 23[0m
+[0;32mI (24221) example: Socket created, connecting to 192.168.1.5:8080[0m
+[0;31mE (24231) example: Socket unable to connect: errno 9[0m
+[0;32mI (24231) example: about to send[0m
+[0;32mI (24241) example: Successfully connected[0m
+[0;31mE (24241) example: Error occurred during sending: errno 9[0m
+[0;31mE (24251) example: Unable to create socket: errno 23[0m
+[0;31mE (24251) example: Unable to create socket: errno 23[0m
+[0;32mI (24261) example: Socket created, connecting to 192.168.1.5:8080[0m
+[0;31mE (24261) example: Socket unable to connect: errno 9[0m
+[0;32mI (24271) example: about to send[0m
+[0;32mI (24271) example: Successfully connected[0m
+[0;31mE (24281) example: Error occurred during sending: errno 9[0m
+[0;31mE (24291) example: Unable to create socket: errno 23[0m
+[0;31mE (24291) example: Unable to create socket: errno 23[0m
+[0;32mI (24301) example: Socket created, connecting to 192.168.1.5:8080[0m
+[0;31mE (24301) example: Socket unable to connect: errno 9[0m
+[0;32mI (24311) example: about to send[0m
+[0;32mI (24311) example: Successfully connected[0m
+[0;31mE (24321) example: Error occurred during sending: errno 9[0m
+[0;31mE (24321) example: Unable to create socket: errno 23[0m
+[0;31mE (24331) example: Unable to create socket: errno 23[0m
+[0;32mI (24331) example: Socket created, connecting to 192.168.1.5:8080[0m
+[0;31mE (24341) example: Socket unable to connect: errno 9[0m
+[0;32mI (24351) example: about to send[0m
+[0;32mI (24351) example: Successfully connected[0m
+[0;31mE (24361) example: Error occurred during sending: errno 9[0m
+[0;31mE (24361) example: Unable to create socket: errno 23[0m
+[0;31mE (24371) example: Unable to create socket: errno 23[0m
+[0;32mI (24371) example: Socket created, connecting to 192.168.1.5:8080[0m
+[0;31mE (24381) example: Socket unable to connect: errno 9[0m
+[0;32mI (24391) example: about to send[0m
+[0;32mI (24391) example: Successfully connected[0m
+[0;31mE (24391) example: Error occurred during sending: errno 9[0m
+[0;31mE (24401) example: Unable to create socket: errno 23[0m
+[0;31mE (24411) example: Unable to create socket: errno 23[0m
+[0;32mI (24411) example: Socket created, connecting to 192.168.1.5:8080[0m
+[0;31mE (24421) example: Socket unable to connect: errno 9[0m
+[0;32mI (24421) example: about to send[0m
+[0;32mI (24431) example: Successfully connected[0m
+[0;31mE (24431) example: Error occurred during sending: errno 9[0m
+[0;31mE (24441) example: Unable to create socket: errno 23[0m
+[0;31mE (24441) example: Unable to create socket: errno 23[0m
+[0;32mI (24451) example: Socket created, connecting to 192.168.1.5:8080[0m
+[0;31mE (24461) example: Socket unable to connect: errno 9[0m
+[0;32mI (24461) example: about to send[0m
+[0;32mI (24471) example: Successfully connected[0m
+[0;31mE (24471) example: Error occurred during sending: errno 9[0m
+[0;31mE (24481) example: Unable to create socket: errno 23[0m
+[0;31mE (24481) example: Unable to create socket: errno 23[0m
+[0;32mI (24491) example: Socket created, connecting to 192.168.1.5:8080[0m
+[0;31mE (24501) example: Socket unable to connect: errno 9[0m
+[0;32mI (24501) example: about to send[0m
+[0;32mI (24501) example: Successfully connected[0m
+[0;31mE (24511) example: Error occurred during sending: errno 9[0m
+[0;31mE (24521) example: Unable to create socket: errno 23[0m
+[0;31mE (24521) example: Unable to create socket: errno 23[0m
+[0;32mI (24531) example: Socket created, connecting to 192.168.1.5:8080[0m
+[0;31mE (24531) example: Socket unable to connect: errno 9[0m
+[0;32mI (24541) example: about to send[0m
+[0;32mI (24541) example: Successfully connected[0m
+[0;31mE (24551) example: Error occurred during sending: errno 9[0m
+[0;31mE (24551) example: Unable to create socket: errno 23[0m
+[0;31mE (24561) example: Unable to create socket: errno 23[0m
+[0;32mI (24571) example: Socket created, connecting to 192.168.1.5:8080[0m
+[0;31mE (24571) example: Socket unable to connect: errno 9[0m
+[0;32mI (24581) example: about to send[0m
+[0;32mI (24581) example: Successfully connected[0m
+[0;31mE (24591) example: Error occurred during sending: errno 9[0m
+[0;31mE (24591) example: Unable to create socket: errno 23[0m
+[0;31mE (24601) example: Unable to create socket: errno 23[0m
+[0;32mI (24601) example: Socket created, connecting to 192.168.1.5:8080[0m
+[0;31mE (24611) example: Socket unable to connect: errno 9[0m
+[0;32mI (24621) example: about to send[0m
+[0;32mI (24621) example: Successfully connected[0m
+[0;31mE (24621) example: Error occurred during sending: errno 9[0m
+[0;31mE (24631) example: Unable to create socket: errno 23[0m
+[0;31mE (24641) example: Unable to create socket: errno 23[0m
+[0;32mI (24641) example: Socket created, connecting to 192.168.1.5:8080[0m
+[0;31mE (24651) example: Socket unable to connect: errno 9[0m
+[0;32mI (24651) example: about to send[0m
+[0;32mI (24661) example: Successfully connected[0m
+[0;31mE (24661) example: Error occurred during sending: errno 9[0m
+[0;31mE (24671) example: Unable to create socket: errno 23[0m
+[0;31mE (24671) example: Unable to create socket: errno 23[0m
+[0;32mI (24681) example: Socket created, connecting to 192.168.1.5:8080[0m
+[0;31mE (24691) example: Socket unable to connect: errno 9[0m
+[0;32mI (24691) example: about to send[0m
+[0;32mI (24701) example: Successfully connected[0m
+[0;31mE (24701) example: Error occurred during sending: errno 9[0m
+[0;31mE (24711) example: Unable to create socket: errno 23[0m
+[0;31mE (24711) example: Unable to create socket: errno 23[0m
+[0;32mI (24721) example: Socket created, connecting to 192.168.1.5:8080[0m
+[0;31mE (24731) example: Socket unable to connect: errno 9[0m
+[0;32mI (24731) example: about to send[0m
+[0;32mI (24731) example: Successfully connected[0m
+[0;32mI (24741) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;31mE (24741) example: Error occurred during sending: errno 9[0m
+[0;32mI (24741) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 979[0m
+[0;31mE (24751) example: Unable to create socket: errno 23[0m
+[0;31mE (24761) example: Unable to create socket: errno 23[0m
+[0;32mI (24771) example: Socket created, connecting to 192.168.1.5:8080[0m
+[0;31mE (24781) example: Socket unable to connect: errno 9[0m
+[0;32mI (24781) example: about to send[0m
+[0;32mI (24781) example: Successfully connected[0m
+[0;31mE (24791) example: Error occurred during sending: errno 9[0m
+[0;31mE (24801) example: Unable to create socket: errno 23[0m
+[0;31mE (24801) example: Unable to create socket: errno 23[0m
+[0;32mI (24811) example: Socket created, connecting to 192.168.1.5:8080[0m
+[0;31mE (24811) example: Socket unable to connect: errno 9[0m
+[0;32mI (24821) example: about to send[0m
+[0;32mI (24821) example: Successfully connected[0m
+[0;31mE (24831) example: Error occurred during sending: errno 9[0m

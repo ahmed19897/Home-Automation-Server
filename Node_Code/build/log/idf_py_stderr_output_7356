@@ -1,0 +1,112 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM7 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM7 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x4014e6c4: adc_hal_check_event at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:294
+0x40082e34: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x4008cdd2: _frxt_int_enter at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:139
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4014e6c1: i2s_ll_rx_get_eof_des_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/i2s_ll.h:599
+ (inlined by) adc_hal_get_desc_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:290
+0x40082e31: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x4008e4f2: spi_flash_hal_device_config at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/spi_flash_hal_common.inc:51
+0x400880b1: spiflash_start_default at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:192
+0x40084abd: esp_flash_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:887
+0x40120e42: esp_partition_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_partition/partition_target.c:38
+0x400dc3bb: nvs::NVSPartition::read(unsigned int, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition.cpp:45
+0x4014d17e: nvs::Page::readEntry(unsigned int, nvs::Item&) const at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:853
+0x400dd3a1: nvs::Page::readItem(unsigned char, nvs::ItemType, char const*, void*, unsigned int, unsigned char, nvs::VerOffset) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:280
+0x400db685: nvs::Storage::readMultiPageBlob(unsigned char, char const*, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_storage.cpp:579
+0x400db717: nvs::Storage::readItem(unsigned char, nvs::ItemType, char const*, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_storage.cpp:649
+0x400dc239: nvs::NVSHandleSimple::get_typed_item(nvs::ItemType, char const*, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_handle_simple.cpp:36
+0x400dadb2: nvs_get_str_or_blob(unsigned long, nvs::ItemType, char const*, void*, unsigned int*) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:510
+0x400dae85: nvs_get_blob at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:520
+0x4012287f: load_cal_data_from_nvs_handle at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_phy/src/phy_init.c:717
+0x40122a84: esp_phy_load_cal_data_from_nvs at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_phy/src/phy_init.c:635
+0x40122b47: esp_phy_load_cal_and_init at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_phy/src/phy_init.c:833
+0x40122c41: esp_phy_enable at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_phy/src/phy_init.c:246
+0x40152d2d: esp_phy_enable_wrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_wifi/esp32/esp_adapter.c:584
+0x401064ba: wifi_hw_start at ??:?
+0x40106ce2: wifi_start_process at ??:?
+0x40105076: ieee80211_ioctl_process at ??:?
+0x40092c25: ppTask at ??:?
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x4014e6c4: adc_hal_check_event at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:294
+0x40082e34: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x4008cdd2: _frxt_int_enter at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:139
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4014e6c1: i2s_ll_rx_get_eof_des_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/i2s_ll.h:599
+ (inlined by) adc_hal_get_desc_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:290
+0x40082e31: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x4008dfab: spi_flash_ll_set_command at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/spi_flash_ll.h:323
+ (inlined by) spi_flash_hal_configure_host_io_mode at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/spi_flash_hal_common.inc:136
+0x40095f95: spi_flash_chip_generic_config_host_io_mode at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_chip_generic.c:474
+0x400960d2: spi_flash_chip_generic_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_chip_generic.c:235
+0x40084adf: esp_flash_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:898 (discriminator 4)
+0x40120e42: esp_partition_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_partition/partition_target.c:38
+0x400dc3bb: nvs::NVSPartition::read(unsigned int, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition.cpp:45
+0x4014d17e: nvs::Page::readEntry(unsigned int, nvs::Item&) const at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:853
+0x400dd3a1: nvs::Page::readItem(unsigned char, nvs::ItemType, char const*, void*, unsigned int, unsigned char, nvs::VerOffset) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:280
+0x400db685: nvs::Storage::readMultiPageBlob(unsigned char, char const*, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_storage.cpp:579
+0x400db717: nvs::Storage::readItem(unsigned char, nvs::ItemType, char const*, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_storage.cpp:649
+0x400dc239: nvs::NVSHandleSimple::get_typed_item(nvs::ItemType, char const*, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_handle_simple.cpp:36
+0x400dadb2: nvs_get_str_or_blob(unsigned long, nvs::ItemType, char const*, void*, unsigned int*) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:510
+0x400dae85: nvs_get_blob at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:520
+0x4012287f: load_cal_data_from_nvs_handle at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_phy/src/phy_init.c:717
+0x40122a84: esp_phy_load_cal_data_from_nvs at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_phy/src/phy_init.c:635
+0x40122b47: esp_phy_load_cal_and_init at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_phy/src/phy_init.c:833
+0x40122c41: esp_phy_enable at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_phy/src/phy_init.c:246
+0x40152d2d: esp_phy_enable_wrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_wifi/esp32/esp_adapter.c:584
+0x401064ba: wifi_hw_start at ??:?
+0x40106ce2: wifi_start_process at ??:?
+0x40105076: ieee80211_ioctl_process at ??:?
+0x40092c25: ppTask at ??:?
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x40081ade: panic_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/panic.c:466
+0x40089fc5: esp_system_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/esp_system_chip.c:84
+0x40091279: __assert_func at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/newlib/assert.c:81
+0x400f39c3: esp_netif_create_wifi at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_wifi/src/wifi_default.c:444 (discriminator 1)
+0x400d72c7: example_wifi_start at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:144 (discriminator 2)
+0x400d751e: example_wifi_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:240
+0x400d70d7: example_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/connect.c:99
+0x400d6f89: tcp_client at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_v4.c:77 (discriminator 3)
+0x400d6c67: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:102 (discriminator 2)
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33mTo exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0m
+Traceback (most recent call last):
+  File "d:\Engineering\programes\esp-idf-v5.1.4\esp-idf-v5.1.4\tools/idf_monitor.py", line 11, in <module>
+    sys.exit(subprocess.run([sys.executable, '-m', 'esp_idf_monitor'] + sys.argv[1:]).returncode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "subprocess.py", line 550, in run
+  File "subprocess.py", line 1199, in communicate
+  File "subprocess.py", line 1262, in wait
+  File "subprocess.py", line 1543, in _wait
+KeyboardInterrupt

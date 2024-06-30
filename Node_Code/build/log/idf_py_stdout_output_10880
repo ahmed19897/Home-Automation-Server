@@ -1,0 +1,39 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\user\esp\SOCKET_ADC_RTOS\build\bootloader\esp-idf\esptool_py && d:\Engineering\programes\esp-idf-v5.1.4\esp-idf-v5.1.4\tools\tools\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/user/esp/SOCKET_ADC_RTOS/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/tcp_client_v4.c.obj
+C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_v4.c: In function 'tcp_client':
+C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_v4.c:69:58: warning: passing argument 1 of 'strlen' makes pointer from integer without a cast [-Wint-conversion]
+   69 |             int err = send(sock, result[0], strlen(result[0]), 0);
+      |                                                    ~~~~~~^~~
+      |                                                          |
+      |                                                          uint8_t {aka unsigned char}
+In file included from C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_v4.c:7:
+d:\engineering\programes\esp-idf-v5.1.4\esp-idf-v5.1.4\tools\tools\tools\xtensa-esp32-elf\esp-12.2.0_20230208\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\string.h:41:18: note: expected 'const char *' but argument is of type 'uint8_t' {aka 'unsigned char'}
+   41 | size_t   strlen (const char *);
+      |                  ^~~~~~~~~~~~
+C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_v4.c:69:40: warning: passing argument 2 of 'send' makes pointer from integer without a cast [-Wint-conversion]
+   69 |             int err = send(sock, result[0], strlen(result[0]), 0);
+      |                                  ~~~~~~^~~
+      |                                        |
+      |                                        uint8_t {aka unsigned char}
+In file included from D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/lwip/port/esp32xx/include/sys/socket.h:15,
+                 from C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_v4.c:9:
+D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/lwip/include/lwip/sockets.h:41:46: note: expected 'const void *' but argument is of type 'uint8_t' {aka 'unsigned char'}
+   41 | static inline ssize_t send(int s,const void *dataptr,size_t size,int flags)
+      |                                  ~~~~~~~~~~~~^~~~~~~
+C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_v4.c: At top level:
+C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_v4.c:28:20: warning: 'payload' defined but not used [-Wunused-variable]
+   28 | static const char *payload = "Message from ESP32 ";
+      |                    ^~~~~~~
+[3/7] Linking C static library esp-idf\main\libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable tcp_client.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 27 ELF sections
+Successfully created esp32 image.
+Generated C:/Users/user/esp/SOCKET_ADC_RTOS/build/tcp_client.bin
+[7/7] cmd.exe /C "cd /D C:\Users\user\esp\SOCKET_ADC_RTOS\build\esp-idf\esptool_py && d:\Engineering\programes\esp-idf-v5.1.4\esp-idf-v5.1.4\tools\tools\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/user/esp/SOCKET_ADC_RTOS/build/partition_table/partition-table.bin C:/Users/user/esp/SOCKET_ADC_RTOS/build/tcp_client.bin"
+tcp_client.bin binary size 0xc1180 bytes. Smallest app partition is 0x100000 bytes. 0x3ee80 bytes (25%) free.

@@ -1,0 +1,434 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM7 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM7 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x40081ade: panic_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/panic.c:466
+0x40089fc5: esp_system_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/esp_system_chip.c:84
+0x40091279: __assert_func at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/newlib/assert.c:81
+0x400f3a0f: esp_netif_create_wifi at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_wifi/src/wifi_default.c:444 (discriminator 1)
+0x400d7313: example_wifi_start at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:144 (discriminator 2)
+0x400d756a: example_wifi_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:240
+0x400d7123: example_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/connect.c:99
+0x400d6fd5: tcp_client at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_v4.c:82 (discriminator 3)
+0x400d6c67: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:102 (discriminator 2)
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x40081ade: panic_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/panic.c:466
+0x40089fc5: esp_system_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/esp_system_chip.c:84
+0x40091279: __assert_func at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/newlib/assert.c:81
+0x400f3a0f: esp_netif_create_wifi at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_wifi/src/wifi_default.c:444 (discriminator 1)
+0x400d7313: example_wifi_start at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:144 (discriminator 2)
+0x400d756a: example_wifi_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:240
+0x400d7123: example_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/connect.c:99
+0x400d6fd5: tcp_client at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_v4.c:82 (discriminator 3)
+0x400d6c67: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:102 (discriminator 2)
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x40081ade: panic_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/panic.c:466
+0x40089fc5: esp_system_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/esp_system_chip.c:84
+0x40091279: __assert_func at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/newlib/assert.c:81
+0x400f3a0f: esp_netif_create_wifi at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_wifi/src/wifi_default.c:444 (discriminator 1)
+0x400d7313: example_wifi_start at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:144 (discriminator 2)
+0x400d756a: example_wifi_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:240
+0x400d7123: example_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/connect.c:99
+0x400d6fd5: tcp_client at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_v4.c:82 (discriminator 3)
+0x400d6c67: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:102 (discriminator 2)
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x40081ade: panic_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/panic.c:466
+0x40089fc5: esp_system_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/esp_system_chip.c:84
+0x40091279: __assert_func at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/newlib/assert.c:81
+0x400f3a0f: esp_netif_create_wifi at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_wifi/src/wifi_default.c:444 (discriminator 1)
+0x400d7313: example_wifi_start at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:144 (discriminator 2)
+0x400d756a: example_wifi_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:240
+0x400d7123: example_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/connect.c:99
+0x400d6fd5: tcp_client at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_v4.c:82 (discriminator 3)
+0x400d6c67: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:102 (discriminator 2)
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x40081ade: panic_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/panic.c:466
+0x40089fc5: esp_system_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/esp_system_chip.c:84
+0x40091279: __assert_func at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/newlib/assert.c:81
+0x400f3a0f: esp_netif_create_wifi at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_wifi/src/wifi_default.c:444 (discriminator 1)
+0x400d7313: example_wifi_start at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:144 (discriminator 2)
+0x400d756a: example_wifi_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:240
+0x400d7123: example_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/connect.c:99
+0x400d6fd5: tcp_client at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_v4.c:82 (discriminator 3)
+0x400d6c67: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:102 (discriminator 2)
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x4014e710: adc_hal_check_event at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:294
+0x40082e34: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x4008cdd2: _frxt_int_enter at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:139
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4014e70d: i2s_ll_rx_get_eof_des_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/i2s_ll.h:599
+ (inlined by) adc_hal_get_desc_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:290
+0x40082e31: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x4000c2dd: memcpy in ROM
+0x4008dea5: spi_flash_ll_get_buffer_data at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/spi_flash_ll.h:137
+0x4008e2a1: spi_flash_hal_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/spi_flash_hal_common.inc:192
+0x40096139: spi_flash_chip_generic_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_chip_generic.c:247
+0x40084adf: esp_flash_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:898 (discriminator 4)
+0x40120e8e: esp_partition_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_partition/partition_target.c:38
+0x400dc407: nvs::NVSPartition::read(unsigned int, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition.cpp:45
+0x4014d1ca: nvs::Page::readEntry(unsigned int, nvs::Item&) const at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:853
+0x400dd0c6: nvs::Page::findItem(unsigned char, nvs::ItemType, char const*, unsigned int&, nvs::Item&, unsigned char, nvs::VerOffset) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:906
+0x400dd392: nvs::Page::readItem(unsigned char, nvs::ItemType, char const*, void*, unsigned int, unsigned char, nvs::VerOffset) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:258
+0x400db799: nvs::Storage::readItem(unsigned char, nvs::ItemType, char const*, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_storage.cpp:659
+0x400dc285: nvs::NVSHandleSimple::get_typed_item(nvs::ItemType, char const*, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_handle_simple.cpp:36
+0x4014ce15: int nvs::NVSHandle::get_item<unsigned char>(char const*, unsigned char&) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/include/nvs_handle.hpp:275
+0x400db107: int nvs_get<unsigned char>(unsigned long, char const*, unsigned char*) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:440
+0x400db11d: nvs_get_u8 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:450
+0x401093e1: wifi_nvs_validate_sta_listen_interval at ??:?
+0x401096ab: wifi_nvs_init at ??:?
+0x40106c9e: wifi_init_process at ??:?
+0x401050c2: ieee80211_ioctl_process at ??:?
+0x40092c25: ppTask at ??:?
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x40081ade: panic_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/panic.c:466
+0x40089fc5: esp_system_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/esp_system_chip.c:84
+0x40091279: __assert_func at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/newlib/assert.c:81
+0x400f3a0f: esp_netif_create_wifi at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_wifi/src/wifi_default.c:444 (discriminator 1)
+0x400d7313: example_wifi_start at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:144 (discriminator 2)
+0x400d756a: example_wifi_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:240
+0x400d7123: example_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/connect.c:99
+0x400d6fd5: tcp_client at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_v4.c:82 (discriminator 3)
+0x400d6c67: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:102 (discriminator 2)
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x40081ade: panic_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/panic.c:466
+0x40089fc5: esp_system_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/esp_system_chip.c:84
+0x40091279: __assert_func at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/newlib/assert.c:81
+0x400f3a0f: esp_netif_create_wifi at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_wifi/src/wifi_default.c:444 (discriminator 1)
+0x400d7313: example_wifi_start at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:144 (discriminator 2)
+0x400d756a: example_wifi_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:240
+0x400d7123: example_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/connect.c:99
+0x400d6fd5: tcp_client at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_v4.c:82 (discriminator 3)
+0x400d6c67: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:102 (discriminator 2)
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x40081ade: panic_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/panic.c:466
+0x40089fc5: esp_system_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/esp_system_chip.c:84
+0x40091279: __assert_func at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/newlib/assert.c:81
+0x400f3a0f: esp_netif_create_wifi at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_wifi/src/wifi_default.c:444 (discriminator 1)
+0x400d7313: example_wifi_start at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:144 (discriminator 2)
+0x400d756a: example_wifi_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:240
+0x400d7123: example_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/connect.c:99
+0x400d6fd5: tcp_client at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_v4.c:82 (discriminator 3)
+0x400d6c67: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:102 (discriminator 2)
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x40081ade: panic_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/panic.c:466
+0x40089fc5: esp_system_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/esp_system_chip.c:84
+0x40091279: __assert_func at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/newlib/assert.c:81
+0x400f3a0f: esp_netif_create_wifi at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_wifi/src/wifi_default.c:444 (discriminator 1)
+0x400d7313: example_wifi_start at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:144 (discriminator 2)
+0x400d756a: example_wifi_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:240
+0x400d7123: example_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/connect.c:99
+0x400d6fd5: tcp_client at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_v4.c:82 (discriminator 3)
+0x400d6c67: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:102 (discriminator 2)
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x40081ade: panic_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/panic.c:466
+0x40089fc5: esp_system_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/esp_system_chip.c:84
+0x40091279: __assert_func at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/newlib/assert.c:81
+0x400f3a0f: esp_netif_create_wifi at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_wifi/src/wifi_default.c:444 (discriminator 1)
+0x400d7313: example_wifi_start at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:144 (discriminator 2)
+0x400d756a: example_wifi_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:240
+0x400d7123: example_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/connect.c:99
+0x400d6fd5: tcp_client at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_v4.c:82 (discriminator 3)
+0x400d6c67: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:102 (discriminator 2)
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x40081ade: panic_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/panic.c:466
+0x40089fc5: esp_system_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/esp_system_chip.c:84
+0x40091279: __assert_func at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/newlib/assert.c:81
+0x400f3a0f: esp_netif_create_wifi at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_wifi/src/wifi_default.c:444 (discriminator 1)
+0x400d7313: example_wifi_start at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:144 (discriminator 2)
+0x400d756a: example_wifi_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:240
+0x400d7123: example_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/connect.c:99
+0x400d6fd5: tcp_client at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_v4.c:82 (discriminator 3)
+0x400d6c67: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:102 (discriminator 2)
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x40081ade: panic_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/panic.c:466
+0x40089fc5: esp_system_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/esp_system_chip.c:84
+0x40091279: __assert_func at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/newlib/assert.c:81
+0x400f3a0f: esp_netif_create_wifi at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_wifi/src/wifi_default.c:444 (discriminator 1)
+0x400d7313: example_wifi_start at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:144 (discriminator 2)
+0x400d756a: example_wifi_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:240
+0x400d7123: example_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/connect.c:99
+0x400d6fd5: tcp_client at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_v4.c:82 (discriminator 3)
+0x400d6c67: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:102 (discriminator 2)
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x40081ade: panic_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/panic.c:466
+0x40089fc5: esp_system_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/esp_system_chip.c:84
+0x40091279: __assert_func at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/newlib/assert.c:81
+0x400f3a0f: esp_netif_create_wifi at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_wifi/src/wifi_default.c:444 (discriminator 1)
+0x400d7313: example_wifi_start at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:144 (discriminator 2)
+0x400d756a: example_wifi_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:240
+0x400d7123: example_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/connect.c:99
+0x400d6fd5: tcp_client at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_v4.c:82 (discriminator 3)
+0x400d6c67: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:102 (discriminator 2)
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x4014e710: adc_hal_check_event at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:294
+0x40082e34: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x4008cdd2: _frxt_int_enter at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:139
+[0m
+[0;33m0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m0x4014e70d: i2s_ll_rx_get_eof_des_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/i2s_ll.h:599
+ (inlined by) adc_hal_get_desc_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:290
+0x40082e31: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x4008e479: spi_flash_ll_cmd_is_done at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/spi_flash_ll.h:77 (discriminator 1)
+ (inlined by) spi_flash_hal_poll_cmd_done at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/spi_flash_hal_common.inc:38 (discriminator 1)
+0x4008e296: spi_flash_hal_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/spi_flash_hal_common.inc:190
+0x40096139: spi_flash_chip_generic_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_chip_generic.c:247
+0x40084adf: esp_flash_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:898 (discriminator 4)
+0x40120e8e: esp_partition_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_partition/partition_target.c:38
+0x400dc407: nvs::NVSPartition::read(unsigned int, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition.cpp:45
+0x4014d1ca: nvs::Page::readEntry(unsigned int, nvs::Item&) const at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:853
+0x400dd0c6: nvs::Page::findItem(unsigned char, nvs::ItemType, char const*, unsigned int&, nvs::Item&, unsigned char, nvs::VerOffset) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:906
+0x400dd392: nvs::Page::readItem(unsigned char, nvs::ItemType, char const*, void*, unsigned int, unsigned char, nvs::VerOffset) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:258
+0x400db799: nvs::Storage::readItem(unsigned char, nvs::ItemType, char const*, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_storage.cpp:659
+0x400dc285: nvs::NVSHandleSimple::get_typed_item(nvs::ItemType, char const*, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_handle_simple.cpp:36
+0x4014ce15: int nvs::NVSHandle::get_item<unsigned char>(char const*, unsigned char&) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/include/nvs_handle.hpp:275
+0x400db107: int nvs_get<unsigned char>(unsigned long, char const*, unsigned char*) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:440
+0x400db11d: nvs_get_u8 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:450
+0x401093e1: wifi_nvs_validate_sta_listen_interval at ??:?
+0x401096ab: wifi_nvs_init at ??:?
+0x40106c9e: wifi_init_process at ??:?
+0x401050c2: ieee80211_ioctl_process at ??:?
+0x40092c25: ppTask at ??:?
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x40081ade: panic_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/panic.c:466
+0x40089fc5: esp_system_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/esp_system_chip.c:84
+0x40091279: __assert_func at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/newlib/assert.c:81
+0x400f3a0f: esp_netif_create_wifi at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_wifi/src/wifi_default.c:444 (discriminator 1)
+0x400d7313: example_wifi_start at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:144 (discriminator 2)
+0x400d756a: example_wifi_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:240
+0x400d7123: example_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/connect.c:99
+0x400d6fd5: tcp_client at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_v4.c:82 (discriminator 3)
+0x400d6c67: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:102 (discriminator 2)
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x40081ade: panic_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/panic.c:466
+0x40089fc5: esp_system_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/esp_system_chip.c:84
+0x40091279: __assert_func at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/newlib/assert.c:81
+0x400f3a0f: esp_netif_create_wifi at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_wifi/src/wifi_default.c:444 (discriminator 1)
+0x400d7313: example_wifi_start at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:144 (discriminator 2)
+0x400d756a: example_wifi_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:240
+0x400d7123: example_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/connect.c:99
+0x400d6fd5: tcp_client at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_v4.c:82 (discriminator 3)
+0x400d6c67: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:102 (discriminator 2)
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x40081ade: panic_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/panic.c:466
+0x40089fc5: esp_system_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/esp_system_chip.c:84
+0x40091279: __assert_func at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/newlib/assert.c:81
+0x400f3a0f: esp_netif_create_wifi at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_wifi/src/wifi_default.c:444 (discriminator 1)
+0x400d7313: example_wifi_start at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:144 (discriminator 2)
+0x400d756a: example_wifi_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:240
+0x400d7123: example_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/connect.c:99
+0x400d6fd5: tcp_client at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_v4.c:82 (discriminator 3)
+0x400d6c67: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:102 (discriminator 2)
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x40081ade: panic_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/panic.c:466
+0x40089fc5: esp_system_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/esp_system_chip.c:84
+0x40091279: __assert_func at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/newlib/assert.c:81
+0x400f3a0f: esp_netif_create_wifi at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_wifi/src/wifi_default.c:444 (discriminator 1)
+0x400d7313: example_wifi_start at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:144 (discriminator 2)
+0x400d756a: example_wifi_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:240
+0x400d7123: example_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/connect.c:99
+0x400d6fd5: tcp_client at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_v4.c:82 (discriminator 3)
+0x400d6c67: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:102 (discriminator 2)
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x4014e710: adc_hal_check_event at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:294
+0x40082e34: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x4008cdd2: _frxt_int_enter at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:139
+[0m
+[0;33m0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m0x4014e70d: i2s_ll_rx_get_eof_des_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/i2s_ll.h:599
+ (inlined by) adc_hal_get_desc_addr at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/adc_hal.c:290
+0x40082e31: _xt_lowint1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x4008e27e: spi_flash_ll_set_miso_bitlen at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/esp32/include/hal/spi_flash_ll.h:293
+ (inlined by) spi_flash_hal_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/hal/spi_flash_hal_common.inc:188
+0x40096139: spi_flash_chip_generic_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/spi_flash_chip_generic.c:247
+0x40084adf: esp_flash_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/spi_flash/esp_flash_api.c:898 (discriminator 4)
+0x40120e8e: esp_partition_read at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_partition/partition_target.c:38
+0x400dc407: nvs::NVSPartition::read(unsigned int, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_partition.cpp:45
+0x4014d1ca: nvs::Page::readEntry(unsigned int, nvs::Item&) const at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:853
+0x400dd0c6: nvs::Page::findItem(unsigned char, nvs::ItemType, char const*, unsigned int&, nvs::Item&, unsigned char, nvs::VerOffset) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:906
+0x400dd392: nvs::Page::readItem(unsigned char, nvs::ItemType, char const*, void*, unsigned int, unsigned char, nvs::VerOffset) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_page.cpp:258
+0x400db799: nvs::Storage::readItem(unsigned char, nvs::ItemType, char const*, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_storage.cpp:659
+0x400dc285: nvs::NVSHandleSimple::get_typed_item(nvs::ItemType, char const*, void*, unsigned int) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_handle_simple.cpp:36
+0x4014ce15: int nvs::NVSHandle::get_item<unsigned char>(char const*, unsigned char&) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/include/nvs_handle.hpp:275
+0x400db107: int nvs_get<unsigned char>(unsigned long, char const*, unsigned char*) at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:440
+0x400db11d: nvs_get_u8 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/nvs_flash/src/nvs_api.cpp:450
+0x401093e1: wifi_nvs_validate_sta_listen_interval at ??:?
+0x401096ab: wifi_nvs_init at ??:?
+0x40106c9e: wifi_init_process at ??:?
+0x401050c2: ieee80211_ioctl_process at ??:?
+0x40092c25: ppTask at ??:?
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x40081ade: panic_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/panic.c:466
+0x40089fc5: esp_system_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/esp_system_chip.c:84
+0x40091279: __assert_func at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/newlib/assert.c:81
+0x400f3a0f: esp_netif_create_wifi at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_wifi/src/wifi_default.c:444 (discriminator 1)
+0x400d7313: example_wifi_start at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:144 (discriminator 2)
+0x400d756a: example_wifi_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:240
+0x400d7123: example_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/connect.c:99
+0x400d6fd5: tcp_client at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_v4.c:82 (discriminator 3)
+0x400d6c67: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:102 (discriminator 2)
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x40081ade: panic_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/panic.c:466
+0x40089fc5: esp_system_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/esp_system_chip.c:84
+0x40091279: __assert_func at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/newlib/assert.c:81
+0x400f3a0f: esp_netif_create_wifi at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_wifi/src/wifi_default.c:444 (discriminator 1)
+0x400d7313: example_wifi_start at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:144 (discriminator 2)
+0x400d756a: example_wifi_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:240
+0x400d7123: example_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/connect.c:99
+0x400d6fd5: tcp_client at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_v4.c:82 (discriminator 3)
+0x400d6c67: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:102 (discriminator 2)
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x40081ade: panic_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/panic.c:466
+0x40089fc5: esp_system_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/esp_system_chip.c:84
+0x40091279: __assert_func at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/newlib/assert.c:81
+0x400f3a0f: esp_netif_create_wifi at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_wifi/src/wifi_default.c:444 (discriminator 1)
+0x400d7313: example_wifi_start at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:144 (discriminator 2)
+0x400d756a: example_wifi_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:240
+0x400d7123: example_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/connect.c:99
+0x400d6fd5: tcp_client at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_v4.c:82 (discriminator 3)
+0x400d6c67: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:102 (discriminator 2)
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x40081ade: panic_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/panic.c:466
+0x40089fc5: esp_system_abort at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/esp_system_chip.c:84
+0x40091279: __assert_func at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/newlib/assert.c:81
+0x400f3a0f: esp_netif_create_wifi at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_wifi/src/wifi_default.c:444 (discriminator 1)
+0x400d7313: example_wifi_start at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:144 (discriminator 2)
+0x400d756a: example_wifi_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/wifi_connect.c:240
+0x400d7123: example_connect at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/examples/common_components/protocol_examples_common/connect.c:99
+0x400d6fd5: tcp_client at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_v4.c:82 (discriminator 3)
+0x400d6c67: Socket_Task at C:/Users/user/esp/SOCKET_ADC_RTOS/main/tcp_client_main.c:102 (discriminator 2)
+0x4008ca21: vPortTaskWrapper at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081478: call_start_cpu1 at D:/Engineering/programes/esp-idf-v5.1.4/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0m

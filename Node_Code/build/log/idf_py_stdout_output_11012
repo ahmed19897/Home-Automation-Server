@@ -1,0 +1,930 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.4-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Jun 16 2024 05:15:56[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.0[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=21368h (136040) map[0m
+[0;32mI (156) esp_image: segment 1: paddr=00031390 vaddr=3ffb0000 size=03bbch ( 15292) load[0m
+[0;32mI (162) esp_image: segment 2: paddr=00034f54 vaddr=40080000 size=0b0c4h ( 45252) load[0m
+[0;32mI (181) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=8533ch (545596) map[0m
+[0;32mI (378) esp_image: segment 4: paddr=000c5364 vaddr=4008b0c4 size=0bd90h ( 48528) load[0m
+[0;32mI (410) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (410) boot: Disabling RNG early entropy source...[0m
+[0;32mI (422) cpu_start: Multicore app[0m
+[0;32mI (422) cpu_start: Pro cpu up.[0m
+[0;32mI (422) cpu_start: Starting app cpu, entry point is 0x40081478[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (440) cpu_start: Pro cpu start user code[0m
+[0;32mI (440) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (440) cpu_start: Application information:[0m
+[0;32mI (445) cpu_start: Project name:     tcp_client[0m
+[0;32mI (450) cpu_start: App version:      1[0m
+[0;32mI (455) cpu_start: Compile time:     Jun 16 2024 05:15:23[0m
+[0;32mI (461) cpu_start: ELF file SHA256:  489a83b320db6438...[0m
+[0;32mI (467) cpu_start: ESP-IDF:          v5.1.4-dirty[0m
+[0;32mI (472) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (477) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (482) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (486) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (494) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (500) heap_init: At 3FFB7C68 len 00028398 (160 KiB): DRAM[0m
+[0;32mI (506) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (512) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (519) heap_init: At 40096E54 len 000091AC (36 KiB): IRAM[0m
+[0;32mI (526) spi_flash: detected chip: generic[0m
+[0;32mI (529) spi_flash: flash io: dio[0m
+[0;33mW (533) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (547) app_start: Starting scheduler on CPU0[0m
+[0;32mI (552) app_start: Starting scheduler on CPU1[0m
+[0;32mI (552) main_task: Started on CPU0[0m
+[0;32mI (562) main_task: Calling app_main()[0m
+[0;32mI (662) EXAMPLE: adc_pattern[0].atten is :0[0m
+[0;32mI (662) EXAMPLE: adc_pattern[0].channel is :6[0m
+[0;32mI (662) EXAMPLE: adc_pattern[0].unit is :0[0m
+[0;32mI (662) gpio: GPIO[34]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 571[0m
+[0;32mI (712) example_connect: Start example_connect.[0m
+[0;32mI (722) main_task: Returned from app_main()[0m
+I (732) wifi:wifi driver task: 3ffc27d0, prio:23, stack:6656, core=0
+I (752) wifi:wifi firmware version: 3ce09e5
+I (752) wifi:wifi certification version: v7.0
+I (752) wifi:config NVS flash: enabled
+I (752) wifi:config nano formating: disabled
+I (752) wifi:Init data frame dynamic rx buffer num: 32
+I (762) wifi:Init static rx mgmt buffer num: 5
+I (762) wifi:Init management short buffer num: 32
+I (772) wifi:Init dynamic tx buffer num: 32
+I (772) wifi:Init static rx buffer size: 1600
+I (772) wifi:Init static rx buffer num: 10
+I (782) wifi:Init dynamic rx buffer num: 32
+[0;32mI (782) wifi_init: rx ba win: 6[0m
+[0;32mI (792) wifi_init: tcpip mbox: 32[0m
+[0;32mI (792) wifi_init: udp mbox: 6[0m
+[0;32mI (792) wifi_init: tcp mbox: 6[0m
+[0;32mI (802) wifi_init: tcp tx win: 5760[0m
+[0;32mI (802) wifi_init: tcp rx win: 5760[0m
+[0;32mI (812) wifi_init: tcp mss: 1440[0m
+[0;32mI (812) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (812) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (822) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (912) wifi:mode : sta (a8:42:e3:4b:8a:b4)
+I (912) wifi:enable tsf
+[0;32mI (912) example_connect: Connecting to Etisalat-loy...[0m
+[0;32mI (912) example_connect: Waiting for IP(s)[0m
+[0;32mI (1682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (1682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 573[0m
+[0;32mI (2682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (2682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 534[0m
+I (3332) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (3572) wifi:state: init -> auth (b0)
+I (3582) wifi:state: auth -> assoc (0)
+I (3592) wifi:state: assoc -> run (10)
+[0;32mI (3682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (3682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 530[0m
+I (3782) wifi:connected with Etisalat-loy, aid = 5, channel 6, BW20, bssid = 1c:7f:2c:e8:88:fc
+I (3782) wifi:security: WPA2-PSK, phy: bgn, rssi: -59
+I (3782) wifi:pm start, type: 1
+
+I (3782) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3792) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (4682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 562[0m
+[0;32mI (4802) esp_netif_handlers: example_netif_sta ip: 192.168.1.11, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (4802) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.1.11[0m
+[0;32mI (4802) example_common: Connected to example_netif_sta[0m
+[0;32mI (4812) example_common: - IPv4 address: 192.168.1.11,[0m
+[0;32mI (4822) example: Socket created, connecting to 192.168.1.5:8080[0m
+[0;32mI (5682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (5682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 540[0m
+[0;32mI (6682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (6682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 571[0m
+I (6812) wifi:<ba-add>idx:0 (ifx:0, 1c:7f:2c:e8:88:fc), tid:0, ssn:4, winSize:64
+[0;32mI (6892) example: Successfully connected[0m
+[0;32mI (6892) example: Successfully connected[0m
+[0;32mI (7682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (7682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 525[0m
+[0;32mI (8682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (8682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 523[0m
+[0;32mI (9682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (9682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 543[0m
+[0;32mI (10392) example: Successfully connected[0m
+[0;32mI (10682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (10682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 538[0m
+[0;32mI (11682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (11682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 537[0m
+[0;32mI (12682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (12682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 572[0m
+[0;32mI (13682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (13682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 545[0m
+[0;32mI (13892) example: Successfully connected[0m
+[0;32mI (14682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (14682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 560[0m
+[0;32mI (15682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (15682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 560[0m
+[0;32mI (16682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (16682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 572[0m
+[0;32mI (17392) example: Successfully connected[0m
+[0;32mI (17682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (17682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 564[0m
+[0;32mI (18682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (18682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 573[0m
+[0;32mI (19682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (19682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 547[0m
+[0;32mI (20682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (20682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 549[0m
+[0;32mI (20892) example: Successfully connected[0m
+[0;32mI (21682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (21682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 593[0m
+[0;32mI (22682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (22682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 551[0m
+[0;32mI (23682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (23682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 550[0m
+[0;32mI (24392) example: Successfully connected[0m
+[0;32mI (24682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (24682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 544[0m
+[0;32mI (25682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (25682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 548[0m
+[0;32mI (26682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (26682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 575[0m
+[0;32mI (27682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (27682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 503[0m
+[0;32mI (27892) example: Successfully connected[0m
+[0;32mI (28682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (28682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 551[0m
+[0;32mI (29682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (29682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 559[0m
+[0;32mI (30682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (30682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 560[0m
+[0;32mI (31392) example: Successfully connected[0m
+[0;32mI (31682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (31682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 599[0m
+[0;32mI (32682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (32682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 492[0m
+[0;32mI (33682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (33682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 538[0m
+[0;32mI (34682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (34682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 528[0m
+[0;32mI (34892) example: Successfully connected[0m
+[0;32mI (35682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (35682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 563[0m
+[0;32mI (36682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (36682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 529[0m
+[0;32mI (37682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (37682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 479[0m
+[0;32mI (38392) example: Successfully connected[0m
+[0;32mI (38682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (38682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 510[0m
+[0;32mI (39682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (39682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 546[0m
+[0;32mI (40682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (40682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 545[0m
+[0;32mI (41682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (41682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 511[0m
+[0;32mI (41892) example: Successfully connected[0m
+[0;32mI (42682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (42682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 563[0m
+[0;32mI (43682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (43682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 539[0m
+[0;32mI (44682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (44682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 483[0m
+[0;32mI (45392) example: Successfully connected[0m
+[0;32mI (45682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (45682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 547[0m
+[0;32mI (46682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (46682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 554[0m
+[0;32mI (47682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (47682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 558[0m
+[0;32mI (48682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (48682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 528[0m
+[0;32mI (48892) example: Successfully connected[0m
+[0;32mI (49682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (49682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 535[0m
+[0;32mI (50682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (50682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 577[0m
+[0;32mI (51682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (51682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 581[0m
+[0;32mI (52392) example: Successfully connected[0m
+[0;32mI (52682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (52682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 534[0m
+[0;32mI (53682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (53682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 567[0m
+[0;32mI (54682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (54682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 525[0m
+[0;32mI (55682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (55682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 496[0m
+[0;32mI (55892) example: Successfully connected[0m
+[0;32mI (56682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (56682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 511[0m
+[0;32mI (57682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (57682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 560[0m
+[0;32mI (58682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (58682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 571[0m
+[0;32mI (59392) example: Successfully connected[0m
+[0;32mI (59682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (59682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 546[0m
+[0;32mI (60682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (60682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 532[0m
+[0;32mI (61682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (61682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 546[0m
+[0;32mI (62682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (62682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 553[0m
+[0;32mI (62892) example: Successfully connected[0m
+[0;32mI (63682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (63682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 501[0m
+[0;32mI (64682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (64682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 531[0m
+[0;32mI (65682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (65682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 540[0m
+[0;32mI (66392) example: Successfully connected[0m
+[0;32mI (66682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (66682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 545[0m
+[0;32mI (67682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (67682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 508[0m
+[0;32mI (68682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (68682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 558[0m
+[0;32mI (69682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (69682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 558[0m
+[0;32mI (69892) example: Successfully connected[0m
+[0;32mI (70682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (70682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 546[0m
+[0;32mI (71682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (71682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 558[0m
+[0;32mI (72682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (72682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 539[0m
+[0;32mI (73392) example: Successfully connected[0m
+[0;32mI (73682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (73682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 532[0m
+[0;32mI (74682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (74682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 576[0m
+[0;32mI (75682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (75682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 537[0m
+[0;32mI (76682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (76682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 490[0m
+[0;32mI (76892) example: Successfully connected[0m
+[0;32mI (77682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (77682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 593[0m
+[0;32mI (78682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (78682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 552[0m
+[0;32mI (79682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (79682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 560[0m
+[0;32mI (80392) example: Successfully connected[0m
+[0;32mI (80682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (80682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 529[0m
+[0;32mI (81682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (81682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 548[0m
+[0;32mI (82682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (82682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 546[0m
+[0;32mI (83682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (83682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 528[0m
+[0;32mI (83892) example: Successfully connected[0m
+[0;32mI (84682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (84682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 560[0m
+[0;32mI (85682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (85682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 539[0m
+[0;32mI (86682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (86682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 524[0m
+[0;32mI (87392) example: Successfully connected[0m
+[0;32mI (87682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (87682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 564[0m
+[0;32mI (88682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (88682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 548[0m
+[0;32mI (89682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (89682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 501[0m
+[0;32mI (90682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (90682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 559[0m
+[0;32mI (90892) example: Successfully connected[0m
+[0;32mI (91682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (91682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 534[0m
+[0;32mI (92682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (92682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 562[0m
+[0;32mI (93682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (93682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 554[0m
+[0;32mI (94392) example: Successfully connected[0m
+[0;32mI (94682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (94682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 526[0m
+[0;32mI (95682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (95682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 533[0m
+[0;32mI (96682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (96682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 544[0m
+[0;32mI (97682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (97682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 554[0m
+[0;32mI (97892) example: Successfully connected[0m
+[0;32mI (98682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (98682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 534[0m
+[0;32mI (99682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (99682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 560[0m
+[0;32mI (100682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (100682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 528[0m
+[0;32mI (101392) example: Successfully connected[0m
+[0;32mI (101682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (101682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 535[0m
+[0;32mI (102682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (102682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 528[0m
+[0;32mI (103682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (103682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 528[0m
+[0;32mI (104682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (104682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 559[0m
+[0;32mI (104892) example: Successfully connected[0m
+[0;32mI (105682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (105682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 557[0m
+[0;32mI (106682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (106682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 529[0m
+[0;32mI (107682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (107682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 560[0m
+[0;32mI (108392) example: Successfully connected[0m
+[0;32mI (108682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (108682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 532[0m
+[0;32mI (109682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (109682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 560[0m
+[0;32mI (110682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (110682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 511[0m
+[0;32mI (111682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (111682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 573[0m
+[0;32mI (111892) example: Successfully connected[0m
+[0;32mI (112682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (112682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 560[0m
+[0;32mI (113682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (113682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 547[0m
+[0;32mI (114682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (114682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 529[0m
+[0;32mI (115392) example: Successfully connected[0m
+[0;32mI (115682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (115682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 559[0m
+[0;32mI (116682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (116682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 560[0m
+[0;32mI (117682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (117682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 562[0m
+[0;32mI (118682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (118682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 522[0m
+[0;32mI (118892) example: Successfully connected[0m
+[0;32mI (119682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (119682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 590[0m
+[0;32mI (120682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (120682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 548[0m
+[0;32mI (121682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (121682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 502[0m
+[0;32mI (122392) example: Successfully connected[0m
+[0;32mI (122682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (122682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 547[0m
+[0;32mI (123682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (123682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 491[0m
+[0;32mI (124682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (124682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 537[0m
+[0;32mI (125682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (125682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 545[0m
+[0;32mI (125892) example: Successfully connected[0m
+[0;32mI (126682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (126682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 529[0m
+[0;32mI (127682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (127682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 524[0m
+[0;32mI (128682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (128682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 509[0m
+[0;32mI (129392) example: Successfully connected[0m
+[0;32mI (129682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (129682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 480[0m
+[0;32mI (130682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (130682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 496[0m
+[0;32mI (131682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (131682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 511[0m
+[0;32mI (132682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (132682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 507[0m
+[0;32mI (132892) example: Successfully connected[0m
+[0;32mI (133682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (133682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 576[0m
+[0;32mI (134682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (134682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 502[0m
+[0;32mI (135682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (135682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 563[0m
+[0;32mI (136392) example: Successfully connected[0m
+[0;32mI (136682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (136682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 548[0m
+[0;32mI (137682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (137682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 521[0m
+[0;32mI (138682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (138682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 533[0m
+[0;32mI (139682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (139682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 538[0m
+[0;32mI (139892) example: Successfully connected[0m
+[0;32mI (140682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (140682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 496[0m
+[0;32mI (141682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (141682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 577[0m
+[0;32mI (142682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (142682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 495[0m
+[0;32mI (143392) example: Successfully connected[0m
+[0;32mI (143682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (143682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 534[0m
+[0;32mI (144682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (144682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 521[0m
+[0;32mI (145682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (145682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 551[0m
+[0;32mI (146682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (146682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 560[0m
+[0;32mI (146892) example: Successfully connected[0m
+[0;32mI (147682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (147682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 546[0m
+[0;32mI (148682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (148682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 551[0m
+[0;32mI (149682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (149682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 558[0m
+[0;32mI (150392) example: Successfully connected[0m
+[0;32mI (150682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (150682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 579[0m
+[0;32mI (151682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (151682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 524[0m
+[0;32mI (152682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (152682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 561[0m
+[0;32mI (153682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (153682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 564[0m
+[0;32mI (153892) example: Successfully connected[0m
+[0;32mI (154682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (154682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 555[0m
+[0;32mI (155682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (155682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 558[0m
+[0;32mI (156682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (156682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 479[0m
+[0;32mI (157392) example: Successfully connected[0m
+[0;32mI (157682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (157682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 557[0m
+[0;32mI (158682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (158682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 536[0m
+[0;32mI (159682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (159682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 557[0m
+[0;32mI (160682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (160682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 545[0m
+[0;32mI (160892) example: Successfully connected[0m
+[0;32mI (161682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (161682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 576[0m
+[0;32mI (162682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (162682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 509[0m
+[0;32mI (163682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (163682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 529[0m
+[0;32mI (164392) example: Successfully connected[0m
+[0;32mI (164682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (164682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 539[0m
+[0;32mI (165682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (165682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 545[0m
+[0;32mI (166682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (166682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 503[0m
+[0;32mI (167682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (167682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 531[0m
+[0;32mI (167892) example: Successfully connected[0m
+[0;32mI (168682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (168682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 542[0m
+[0;32mI (169682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (169682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 528[0m
+[0;32mI (170682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (170682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 527[0m
+[0;32mI (171392) example: Successfully connected[0m
+[0;32mI (171682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (171682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 546[0m
+[0;32mI (172682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (172682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 491[0m
+[0;32mI (173682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (173682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 493[0m
+[0;32mI (174682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (174682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 571[0m
+[0;32mI (174892) example: Successfully connected[0m
+[0;32mI (175682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (175682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 592[0m
+[0;32mI (176682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (176682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 509[0m
+[0;32mI (177682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (177682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 481[0m
+[0;32mI (178392) example: Successfully connected[0m
+[0;32mI (178682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (178682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 564[0m
+[0;32mI (179682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (179682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 538[0m
+[0;32mI (180682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (180682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 527[0m
+[0;32mI (181682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (181682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 495[0m
+[0;32mI (181892) example: Successfully connected[0m
+[0;32mI (182682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (182682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 526[0m
+[0;32mI (183682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (183682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 553[0m
+[0;32mI (184682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (184682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 543[0m
+[0;32mI (185392) example: Successfully connected[0m
+[0;32mI (185682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (185682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 509[0m
+[0;32mI (186682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (186682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 542[0m
+[0;32mI (187682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (187682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 529[0m
+[0;32mI (188682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (188682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 496[0m
+[0;32mI (188892) example: Successfully connected[0m
+[0;32mI (189682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (189682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 523[0m
+[0;32mI (190682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (190682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 538[0m
+[0;32mI (191682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (191682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 539[0m
+[0;32mI (192392) example: Successfully connected[0m
+[0;32mI (192682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (192682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 575[0m
+[0;32mI (193682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (193682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 537[0m
+[0;32mI (194682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (194682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 544[0m
+[0;32mI (195682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (195682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 538[0m
+[0;32mI (195892) example: Successfully connected[0m
+[0;32mI (196682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (196682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 523[0m
+[0;32mI (197682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (197682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 551[0m
+[0;32mI (198682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (198682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 534[0m
+[0;32mI (199392) example: Successfully connected[0m
+[0;32mI (199682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (199682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 506[0m
+[0;32mI (200682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (200682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 523[0m
+[0;32mI (201682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (201682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 550[0m
+[0;32mI (202682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (202682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 582[0m
+[0;32mI (202892) example: Successfully connected[0m
+[0;32mI (203682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (203682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 529[0m
+[0;32mI (204682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (204682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 505[0m
+[0;32mI (205682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (205682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 528[0m
+[0;32mI (206392) example: Successfully connected[0m
+[0;32mI (206682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (206682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 554[0m
+[0;32mI (207682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (207682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 561[0m
+[0;32mI (208682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (208682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 564[0m
+[0;32mI (209682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (209682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 545[0m
+[0;32mI (209892) example: Successfully connected[0m
+[0;32mI (210682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (210682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 528[0m
+[0;32mI (211682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (211682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 496[0m
+[0;32mI (212682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (212682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 529[0m
+[0;32mI (213392) example: Successfully connected[0m
+[0;32mI (213682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (213682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 503[0m
+[0;32mI (214682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (214682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 522[0m
+[0;32mI (215682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (215682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 566[0m
+[0;32mI (216682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (216682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 542[0m
+[0;32mI (216892) example: Successfully connected[0m
+[0;32mI (217682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (217682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 560[0m
+[0;32mI (218682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (218682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 511[0m
+[0;32mI (219682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (219682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 509[0m
+[0;32mI (220392) example: Successfully connected[0m
+[0;32mI (220682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (220682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 503[0m
+[0;32mI (221682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (221682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 531[0m
+[0;32mI (222682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (222682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 522[0m
+[0;32mI (223682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (223682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 560[0m
+[0;32mI (223892) example: Successfully connected[0m
+[0;32mI (224682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (224682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 566[0m
+[0;32mI (225682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (225682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 529[0m
+[0;32mI (226682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (226682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 551[0m
+[0;32mI (227392) example: Successfully connected[0m
+[0;32mI (227682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (227682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 577[0m
+[0;32mI (228682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (228682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 493[0m
+[0;32mI (229682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (229682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 466[0m
+[0;32mI (230682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (230682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 593[0m
+[0;32mI (230892) example: Successfully connected[0m
+[0;32mI (231682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (231682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 522[0m
+[0;32mI (232682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (232682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 548[0m
+[0;32mI (233682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (233682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 528[0m
+[0;32mI (234392) example: Successfully connected[0m
+[0;32mI (234682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (234682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 537[0m
+[0;32mI (235682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (235682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 496[0m
+[0;32mI (236682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (236682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 570[0m
+[0;32mI (237682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (237682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 502[0m
+[0;32mI (237892) example: Successfully connected[0m
+[0;32mI (238682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (238682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 522[0m
+[0;32mI (239682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (239682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 546[0m
+[0;32mI (240682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (240682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 511[0m
+[0;32mI (241392) example: Successfully connected[0m
+[0;32mI (241682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (241682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 545[0m
+[0;32mI (242682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (242682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 500[0m
+[0;32mI (243682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (243682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 592[0m
+[0;32mI (244682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (244682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 547[0m
+[0;32mI (244892) example: Successfully connected[0m
+[0;32mI (245682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (245682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 509[0m
+[0;32mI (246682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (246682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 487[0m
+[0;32mI (247682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (247682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 528[0m
+[0;32mI (248392) example: Successfully connected[0m
+[0;32mI (248682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (248682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 525[0m
+[0;32mI (249682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (249682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 509[0m
+[0;32mI (250682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (250682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 529[0m
+[0;32mI (251682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (251682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 523[0m
+[0;32mI (251892) example: Successfully connected[0m
+[0;32mI (252682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (252682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 558[0m
+[0;32mI (253682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (253682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 555[0m
+[0;32mI (254682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (254682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 511[0m
+[0;32mI (255392) example: Successfully connected[0m
+[0;32mI (255682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (255682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 528[0m
+[0;32mI (256682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (256682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 549[0m
+[0;32mI (257682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (257682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 499[0m
+[0;32mI (258682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (258682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 541[0m
+[0;32mI (258892) example: Successfully connected[0m
+[0;32mI (259682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (259682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 534[0m
+[0;32mI (260682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (260682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 525[0m
+[0;32mI (261682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (261682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 542[0m
+[0;32mI (262392) example: Successfully connected[0m
+[0;32mI (262682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (262682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 530[0m
+[0;32mI (263682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (263682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 555[0m
+[0;32mI (264682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (264682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 495[0m
+[0;32mI (265682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (265682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 503[0m
+[0;32mI (265892) example: Successfully connected[0m
+[0;32mI (266682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (266682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 523[0m
+[0;32mI (267682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (267682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 498[0m
+[0;32mI (268682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (268682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 539[0m
+[0;32mI (269392) example: Successfully connected[0m
+[0;32mI (269682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (269682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 528[0m
+[0;32mI (270682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (270682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 489[0m
+[0;32mI (271682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (271682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 496[0m
+[0;32mI (272682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (272682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 511[0m
+[0;32mI (272892) example: Successfully connected[0m
+[0;32mI (273682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (273682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 528[0m
+[0;32mI (274682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (274682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 538[0m
+[0;32mI (275682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (275682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 547[0m
+[0;32mI (276392) example: Successfully connected[0m
+[0;32mI (276682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (276682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 519[0m
+[0;32mI (277682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (277682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 528[0m
+[0;32mI (278682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (278682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 509[0m
+[0;32mI (279682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (279682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 539[0m
+[0;32mI (279892) example: Successfully connected[0m
+[0;32mI (280682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (280682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 539[0m
+[0;32mI (281682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (281682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 533[0m
+[0;32mI (282682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (282682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 545[0m
+[0;32mI (283392) example: Successfully connected[0m
+[0;32mI (283682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (283682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 541[0m
+[0;32mI (284682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (284682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 527[0m
+[0;32mI (285682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (285682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 548[0m
+[0;32mI (286682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (286682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 542[0m
+[0;32mI (286892) example: Successfully connected[0m
+[0;32mI (287682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (287682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 536[0m
+[0;32mI (288682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (288682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 557[0m
+[0;32mI (289682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (289682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 549[0m
+[0;32mI (290392) example: Successfully connected[0m
+[0;32mI (290682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (290682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 524[0m
+[0;32mI (291682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (291682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 490[0m
+[0;32mI (292682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (292682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 582[0m
+[0;32mI (293682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (293682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 554[0m
+[0;32mI (293892) example: Successfully connected[0m
+[0;32mI (294682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (294682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 549[0m
+[0;32mI (295682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (295682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 499[0m
+[0;32mI (296682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (296682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 565[0m
+[0;32mI (297392) example: Successfully connected[0m
+[0;32mI (297682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (297682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 547[0m
+[0;32mI (298682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (298682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 533[0m
+[0;32mI (299682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (299682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 559[0m
+[0;32mI (300682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (300682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 553[0m
+[0;32mI (300892) example: Successfully connected[0m
+[0;32mI (301682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (301682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 535[0m
+[0;32mI (302682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (302682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 546[0m
+[0;32mI (303682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (303682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 500[0m
+[0;32mI (304392) example: Successfully connected[0m
+[0;32mI (304682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (304682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 541[0m
+[0;32mI (305682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (305682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 518[0m
+[0;32mI (306682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (306682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 525[0m
+[0;32mI (307682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (307682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 500[0m
+[0;32mI (307892) example: Successfully connected[0m
+[0;32mI (308682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (308682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 543[0m
+[0;32mI (309682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (309682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 500[0m
+[0;32mI (310682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (310682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 577[0m
+[0;32mI (311392) example: Successfully connected[0m
+[0;32mI (311682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (311682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 536[0m
+[0;32mI (312682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (312682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 582[0m
+[0;32mI (313682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (313682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 543[0m
+[0;32mI (314682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (314682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 519[0m
+[0;32mI (314892) example: Successfully connected[0m
+[0;32mI (315682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (315682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 539[0m
+[0;32mI (316682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (316682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 505[0m
+[0;32mI (317682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (317682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 560[0m
+[0;32mI (318392) example: Successfully connected[0m
+[0;32mI (318682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (318682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 562[0m
+[0;32mI (319682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (319682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 505[0m
+[0;32mI (320682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (320682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 510[0m
+[0;32mI (321682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (321682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 519[0m
+[0;32mI (321892) example: Successfully connected[0m
+[0;32mI (322682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (322682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 533[0m
+[0;32mI (323682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (323682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 576[0m
+[0;32mI (324682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (324682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 547[0m
+[0;32mI (325392) example: Successfully connected[0m
+[0;32mI (325682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (325682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 479[0m
+[0;32mI (326682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (326682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 527[0m
+[0;32mI (327682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (327682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 534[0m
+[0;32mI (328682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (328682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 542[0m
+[0;32mI (328892) example: Successfully connected[0m
+[0;32mI (329682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (329682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 498[0m
+[0;32mI (330682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (330682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 579[0m
+[0;32mI (331682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (331682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 539[0m
+[0;32mI (332392) example: Successfully connected[0m
+[0;32mI (332682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (332682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 528[0m
+[0;32mI (333682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (333682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 528[0m
+[0;32mI (334682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (334682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 528[0m
+[0;32mI (335682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (335682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 477[0m
+[0;32mI (335892) example: Successfully connected[0m
+[0;32mI (336682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (336682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 478[0m
+[0;32mI (337682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (337682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 547[0m
+[0;32mI (338682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (338682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 498[0m
+[0;32mI (339392) example: Successfully connected[0m
+[0;32mI (339682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (339682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 538[0m
+[0;32mI (340682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (340682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 534[0m
+[0;32mI (341682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (341682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 466[0m
+[0;32mI (342682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (342682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 576[0m
+[0;32mI (342892) example: Successfully connected[0m
+[0;32mI (343682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (343682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 541[0m
+[0;32mI (344682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (344682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 527[0m
+[0;32mI (345682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (345682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 562[0m
+[0;32mI (346392) example: Successfully connected[0m
+[0;32mI (346682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (346682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 503[0m
+[0;32mI (347682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (347682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 491[0m
+[0;32mI (348682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (348682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 524[0m
+[0;32mI (349682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (349682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 528[0m
+[0;32mI (349892) example: Successfully connected[0m
+[0;32mI (350682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (350682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 506[0m
+[0;32mI (351682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (351682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 528[0m
+[0;32mI (352682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (352682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 560[0m
+[0;32mI (353392) example: Successfully connected[0m
+[0;32mI (353682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (353682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 529[0m
+[0;32mI (354682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (354682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 545[0m
+[0;32mI (355682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (355682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 549[0m
+[0;32mI (356682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (356682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 523[0m
+[0;32mI (356892) example: Successfully connected[0m
+[0;32mI (357682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (357682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 522[0m
+[0;32mI (358682) TASK: ret is 0, ret_num is 256 bytes[0m
+[0;32mI (358682) EXAMPLE: Unit: ADC_UNIT_1, Channel: 6, Value: 528[0m
