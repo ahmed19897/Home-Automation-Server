@@ -3,13 +3,16 @@ Description=Socket Server task
 After=network.target
 
 [Service]
-ExecStart=/home/ahmed_osama/cpptest/socket_using_cpp/Server/Server
-WorkingDirectory=/home/ahmed_osama/cpptest/socket_using_cpp/Server
+ExecStart=/home/a-osama/Desktop/server
+WorkingDirectory=/home/a-osama/Desktop
 StandardOutput=inheret
 StandardError=inherent
 Restart=always
-RuntimeMaxSec=60
-User=ahmed_osama
+User=root
+Group=root
+AmbientCapabilities=CAP_NET_BIND_SERVICE
+RestartSec=5
+User=a-osama
 
 
 [Install]
