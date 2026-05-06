@@ -1,0 +1,19 @@
+# Ignore everything
+*
+
+# Allow directories so Git can descend into them
+!*/
+
+# Keep main files
+!main/
+
+# Keep .gitignore itself
+!.gitignore
+
+# Ignore specific folders
+build/
+managed_components/
+.vscode/
+.cache/
+Node_Code/sdkconfig.old
+Node_Code/sdkconfig
